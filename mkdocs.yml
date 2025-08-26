@@ -1,0 +1,60 @@
+site_name: "oJobPub - Collecting Vacancies Initiative"
+
+nav:
+  - About: index.md
+  - Why: why.md
+  - Solution: solution.md
+  - How: publish.md
+  - FAQ: faq.md
+ 
+theme:
+  font: false
+  logo: static/logo.png
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  name: material
+  features:
+    - navigation.tabs
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - attr_list
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+copyright: |
+  oJobPub.org © 2025
+
+extra:
+  generator: true
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ojobpub/docs
+
+extra_css:
+  - stylesheets/extra.css
