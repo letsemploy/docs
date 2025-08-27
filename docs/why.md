@@ -14,9 +14,9 @@ Getting information about how much the market is or their profits are difficult 
 
 As a reference: In 2017, the total number of employed persons in Switzerland was 5.01 million ([Source](https://www.swissstats.bfs.admin.ch/collection/ch.admin.bfs.swissstat.en.issue18000251800/article/issue18000251800-06))
 
-This means, **companies in Switzerland paid more than USD 100 millions** (!) just to publish their jop openings to one job portal.
+This means, **companies in Switzerland paid more than USD 100 millions** (!) just to publish their job openings to one job portal.
 
-These jop portals profit from companies searching for employees that much, they have **no interest at all** in actually making it easier, simpler and more efficient to get a job!
+These job portals profit from companies searching for employees that much, they have **no interest at all** in actually making it easier, simpler and more efficient to get a job!
 
 ## Where to publish?
 
@@ -25,7 +25,7 @@ As an employer, this raises two questions:
 > 1. On which job portal should I publish my job openings?
 > 2. How much will it cost? Can my company afford that?
 
-Needless to say, jop portals typically **charge you regardless** of whether you fill the position or not. 
+Needless to say, job portals typically **charge you regardless** of whether you fill the position or not. 
 
 ## Where to look for a job?
 

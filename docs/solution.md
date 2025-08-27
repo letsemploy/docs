@@ -30,7 +30,7 @@ Search engines looking for job openings know beforehand where to look for the da
 
 The search engines are **aware what this data is about**, can optimize revisits and indexing.
 
-Further, your jop openings can be indexed by many search engines or job portals **without additional costs for you**.
+Further, your job openings can be indexed by many search engines or job portals **without additional costs for you**.
 
 ## Keep the control
 
