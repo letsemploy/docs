@@ -1,13 +1,14 @@
 
 # How to publish job openings
 
-You need **your own website**: e.g. www.example.com, on which you publish your job vacancies as usual. This can be using Wordpress, another CMS, plain HTML or any other way.
+## 1. Website
+You need **your own website**: e.g. www.example.com, on which you publish your job openings as usual. This can be using Wordpress, another CMS, plain HTML or any other way.
 
-Additionally, a well defined, structured file `ojobpub.json` with meta information about the job and with the link to the full job description is **published in a predefined subdirectory of your website** `/.well-known/ojobpub.json`.
+## 2. Create a ojobpub.json
+Create file `/.well-known/ojobpub.json` in a **specific JSON format containing structured meta information** about your job openings and link to the full job description on your website.
 
-## How ojobpub.json looks
-
-This file is in a machine-optimized data format (JSON), but is still human-readable. It may look complicated to people who are unfamiliar with this data format, but don't worry: it is not intended to be written by hand by humans.
+!!! note
+    JSON might look complicated if you're not familiar with it, but don't worry — you won't have to write it yourself. Once this format is finalized, we'll provide tools to help you generate and validate the structure.
 
 ```json
 {
@@ -48,8 +49,9 @@ This file is in a machine-optimized data format (JSON), but is still human-reada
 1. The `employer` json object with minimal information about the employer.
 2. The list of `vacancies` objects with meta information about the job openings.
 
-Not all of these properties you see are actual required to publish a valid file. But it is recommended to fill out as much meta information as you can. 
+!!! tip 
+    While not all properties are required for a valid file, we highly recommend you fill out as much metadata as possible.
 
-## JSON Schema
+## 3. Validate
 
-To validate the JSON data format, we created our own [oJobPub JSON schema](https://github.com/ojobpub/schema) and an app [https://validator.ojobpub.org](https://validator.ojobpub.org) to help validate the data file.
+To validate the JSON data format, we provide a [oJobPub JSON schema](https://github.com/ojobpub/schema) and an app [https://validator.ojobpub.org](https://validator.ojobpub.org) to help validate the data file.
