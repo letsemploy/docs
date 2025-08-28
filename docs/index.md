@@ -1,10 +1,10 @@
 # About oJobPub
 
-oJobPub is an initiative with the goal, to create a simlified, optimized and efficient process.
+oJobPub is an initiative with the goal, to create a simlified, optimized and efficient process to publish and collect open job positions and vacancies.
 
 ## Benfits:
 
-- **Efficient**: Employers manage job roles in one place.
+- **Efficient**: Employers manage open job positions in one place.
 - **Optimized**: Search engines index structured data.
 - **Reliable**: Candidates find current jobs more reliable.
 - **In Control**: Employers keep control of their data and application process.
