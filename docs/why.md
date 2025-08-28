@@ -1,6 +1,8 @@
-# What is the issue?
+# What is the Issue?
 
-## Expensive and inefficient
+## Expensive
+
+> How much will it cost? Can my company afford that?
 
 Publishing and finding jobs is a huge market. 
 
@@ -10,29 +12,30 @@ Just to name a few: [Indeed](https://www.indeed.com), [LinkedIn](https://www.lin
 
 Getting information about how much the market is or their profits are difficult but we got an example from Switzerland, JobCloud Inc., the leading job portal in Switzerland with a press release in 2018:
 
-> ...This enabled us to break through the CHF 100 million barrier for the first time in 2017: JobCloud generated sales of CHF 106 million (USD ~108 million), representing growth of 11 percent. Every day, over 160,000 job seekers visited Switzerland's two best-known job portals, jobs.ch and jobup.ch, generating over 12 million job views per month. The number of jobs, especially in the SME segment, grew by 7 and 15 percent respectively. In 2017, we also created 15 new jobs and currently employ around 200 people.
-
-As a reference: In 2017, the total number of employed persons in Switzerland was 5.01 million ([Source](https://www.swissstats.bfs.admin.ch/collection/ch.admin.bfs.swissstat.en.issue18000251800/article/issue18000251800-06))
+!!! quote
+    ...This enabled us to break through the CHF 100 million barrier for the first time in 2017: JobCloud generated sales of CHF 106 million (USD ~108 million), representing growth of 11 percent. Every day, over 160,000 job seekers visited Switzerland's two best-known job portals, jobs.ch and jobup.ch, generating over 12 million job views per month. The number of jobs, especially in the SME segment, grew by 7 and 15 percent respectively. In 2017, we also created 15 new jobs and currently employ around 200 people.
 
 This means, **companies in Switzerland paid more than USD 100 millions** (!) just to publish their job openings to one job portal.
 
-These job portals profit from companies searching for employees that much, they have **no interest at all** in actually making it easier, simpler and more efficient to get a job!
-
-## Where to publish?
-
-As an employer, this raises two questions: 
-
-> 1. On which job portal should I publish my job openings?
-> 2. How much will it cost? Can my company afford that?
+!!! note
+    As a reference: In 2017, the total number of employed persons in Switzerland was 5.01 million ([Source](https://www.swissstats.bfs.admin.ch/collection/ch.admin.bfs.swissstat.en.issue18000251800/article/issue18000251800-06))
 
 Needless to say, job portals typically **charge you regardless** of whether you fill the position or not. 
 
-## Where to look for a job?
+## Inefficient 
 
-As a job seeker, you may ask:
+### Employers
+
+> On which job portals should I publish my job openings?
+
+As an employer we must decide where to publish our job openings. It is not easy to find the criteria to decide on which portal we have the best chances to find a candidate. Publishing a job on multiple portals often means to copy/paste data and more work to manage.
+
+We want to publish the job on **one location** and **spread** the info.
+
+### Job Seekers
 
 > Where to look for a new job? On which job portals? Or should I search the web?
 
-If an employer **can't afford** to pay for a job posting, they might only list the vacancy **somewhere on their own website**, which can be hard to impossible for a candidate to find. 
+If an employer **can't afford** to pay for a job posting, they might only list the vacancy **somewhere on their own website**. Further, all Google/Bing indexed job openings are often **outdated** because they do not distingues normal website content from job openings.
 
-Further, all Google indexed job openings are often **outdated** because Google does not distingues normal website content from job openings.
+We think, our solution might be the **missing piece to make this work**.

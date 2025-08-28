@@ -1,5 +1,5 @@
 
-# How to publish job openings
+# How to publish Job Openings
 
 ## 1. Website
 You need **your own website**: e.g. www.example.com, on which you publish your job openings as usual. This can be using Wordpress, another CMS, plain HTML or any other way.
