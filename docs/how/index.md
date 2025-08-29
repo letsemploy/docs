@@ -12,13 +12,13 @@ To validate the JSON data format, we provide a [oJobPub JSON schema](https://git
 
 ## 4. Let's index
 
-Go to [search.ojobpub.org](https//search.ojobpub.org), enter your domain and **let us index your jobs**! 
+Go to [search.ojobpub.org](https://search.ojobpub.org), enter your domain and **let us index your jobs**! 
 
 This helps us to see, how things are growing. Once this format is known and etablished, this step may become obsolete (hopefully!).
 
 ## 5. Spread the Word
 
-Let others know you are publishing job openings using oJobPub by adding a link on your job site:
+Let others know you are publishing job openings using oJobPub by **adding a link** on your job site:
 ```html
 <a href="https://ojobpub.org">Supports oJobPub.org</a>
 ```
