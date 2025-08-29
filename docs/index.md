@@ -9,7 +9,3 @@ oJobPub is an initiative with the goal, to create a simlified, optimized and eff
 - **Reliable**: Candidates find current job openings more reliable.
 - **In Control**: Employers keep control of their data and application process.
 - **No additional costs** beyond what employers already payed for domain and web hosting.
-
-## Modus Operandi
-
-![](static/nutshell.png)

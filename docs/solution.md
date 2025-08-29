@@ -1,5 +1,7 @@
 # Our Solution
 
+![](static/nutshell.png)
+
 ## Use your own Website
 
 So, we ask ourselves:

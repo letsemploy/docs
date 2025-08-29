@@ -4,7 +4,9 @@ nav:
   - About: index.md
   - Why: why.md
   - Solution: solution.md
-  - How: publish.md
+  - How:
+    - Overview: how/index.md
+    - Format ojobpub.json: how/ojobpub-format.md
   - FAQ: faq.md
  
 theme:

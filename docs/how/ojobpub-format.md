@@ -1,11 +1,5 @@
 
-# How to publish Job Openings
-
-## 1. Website
-You need **your own website**: e.g. www.example.com, on which you publish your job openings as usual. This can be using Wordpress, another CMS, plain HTML or any other way.
-
-## 2. Create a ojobpub.json
-Create file `/.well-known/ojobpub.json` in a **specific JSON format containing structured meta information** about your job openings and link to the full job description on your website.
+# oJobPub JSON File Format
 
 !!! note
     JSON might look complicated if you're not familiar with it, but don't worry — you won't have to write it yourself. Once this format is finalized, we'll provide tools to help you generate and validate the structure.
@@ -51,7 +45,3 @@ Create file `/.well-known/ojobpub.json` in a **specific JSON format containing s
 
 !!! tip 
     While not all properties are required for a valid file, we highly recommend you fill out as much metadata as possible.
-
-## 3. Validate
-
-To validate the JSON data format, we provide a [oJobPub JSON schema](https://github.com/ojobpub/schema) and an app [https://validator.ojobpub.org](https://validator.ojobpub.org) to help validate the data file.
