@@ -10,6 +10,9 @@ Another schema that is very similar to ours is [*json-job*](http://lukasz-madon.
 
 ## How can I help
 
+TBD
 
 ## How can I join
+
+TBD
 

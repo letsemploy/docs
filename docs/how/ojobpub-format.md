@@ -28,7 +28,6 @@ In the following sample, we see first an `employer` object containing infos abou
 Later we find a list of open job positions, called *vacancies*. In the sample, we only see one vacancy but there is currently no limit how many vacancy entries you add. 
 
 ```json
-{
     "employer": {
         "name": "Acme Corp",
         "location": {
@@ -40,12 +39,14 @@ Later we find a list of open job positions, called *vacancies*. In the sample, w
     },
     "vacancies": [
         {
+            "datePublished": "2025-08-30",
+            "jobCategory": "Engineering",
             "jobTitle": "Software Engineer",
-            "jobRef": "SE-001",
+            "jobRef": "SE-2023-001",
             "applyBefore": "2026-12-31",
             "language": "en",
             "jobDescription": "Develop and maintain software applications.",
-            "jobType": "contract",
+            "jobType": "permanent",
             "workType": "hybrid",
             "experienceLevel": "mid",
             "workLoad": {
