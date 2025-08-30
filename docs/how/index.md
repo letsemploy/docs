@@ -18,7 +18,12 @@ This helps us to see, how things are growing. Once this format is known and etab
 
 ## 5. Spread the Word
 
+<<<<<<< Updated upstream
 Let others know you are publishing job openings using oJobPub by **adding a link** on your job site:
+=======
+Let others know you are publishing job openings using oJobPub by adding a link on your job site:
+
+>>>>>>> Stashed changes
 ```html
 <a href="https://ojobpub.org">Supports oJobPub.org</a>
 ```
