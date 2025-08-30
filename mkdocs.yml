@@ -1,13 +1,14 @@
 site_name: "oJobPub - Open Job Publishing Initiative"
 
 nav:
-  - About: index.md
+  - Intro: index.md
   - Why: why.md
   - Solution: solution.md
   - How:
     - Overview: how/index.md
     - ojobpub.json: how/ojobpub-format.md
   - FAQ: faq.md
+  - About: project.md
  
 theme:
   font: false
@@ -44,6 +45,10 @@ markdown_extensions:
   - pymdownx.details
   - admonition
   - attr_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - def_list
+  - footnotes
 
 plugins:
   - search
