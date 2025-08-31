@@ -6,9 +6,10 @@
 
 Publishing and finding jobs is a huge market. 
 
-Nowadays there are **hundrets or thousands** of job portals world wide:
+Nowadays there are **hundrets or thousands** of job portals world wide.
 
-Just to name a few: [Indeed](https://www.indeed.com), [LinkedIn](https://www.linkedin.com), [Monster](https://www.monster.com), [Glassdoor](https://www.glassdoor.com), [CareerBuilder](https://www.careerbuilder.com), [ZipRecruiter](https://www.ziprecruiter.com), [Jobrapido](https://de.jobrapido.com), [Simply Hired](https://www.simplyhired.com), [Dice](https://www.dice.com), [Upwork](https://www.upwork.com), [Fiverr](https://www.fiverr.com), [Freelancer](https://www.freelancer.com), [FlexJobs](https://www.flexjobs.com), [Adzuna](https://www.adzuna.com), [StepStone](https://www.stepstone.de), [XING](https://www.xing.com), [Stellenanzeigen.de](https://www.stellenanzeigen.de), [Jobware](https://www.jobware.de), [Meinestadt.de](https://www.meinestadt.de), [Absolventa](https://www.absolventa.de), [Kimeta](https://www.kimeta.de), [JobNinja](https://www.jobninja.com), [Jobs.ch](https://www.jobs.ch), [JobScout24.ch](https://www.jobscout24.ch), [JobUp.ch](https://www.jobup.ch), [Karriere.at](https://www.karriere.at), a.s.o
+??? info "Small selection of well-known job portals"
+    Just to name a few: [Indeed](https://www.indeed.com), [LinkedIn](https://www.linkedin.com), [Monster](https://www.monster.com), [Glassdoor](https://www.glassdoor.com), [CareerBuilder](https://www.careerbuilder.com), [ZipRecruiter](https://www.ziprecruiter.com), [Jobrapido](https://de.jobrapido.com), [Simply Hired](https://www.simplyhired.com), [Dice](https://www.dice.com), [Upwork](https://www.upwork.com), [Fiverr](https://www.fiverr.com), [Freelancer](https://www.freelancer.com), [FlexJobs](https://www.flexjobs.com), [Adzuna](https://www.adzuna.com), [StepStone](https://www.stepstone.de), [XING](https://www.xing.com), [Stellenanzeigen.de](https://www.stellenanzeigen.de), [Jobware](https://www.jobware.de), [Meinestadt.de](https://www.meinestadt.de), [Absolventa](https://www.absolventa.de), [Kimeta](https://www.kimeta.de), [JobNinja](https://www.jobninja.com), [Jobs.ch](https://www.jobs.ch), [JobScout24.ch](https://www.jobscout24.ch), [JobUp.ch](https://www.jobup.ch), [Karriere.at](https://www.karriere.at), a.s.o
 
 Getting information about how much the market is or their profits are difficult but we got an example from Switzerland, JobCloud Inc., the leading job portal in Switzerland with a press release in 2019:
 
@@ -18,7 +19,7 @@ Getting information about how much the market is or their profits are difficult 
 
 Employers in Switzerland paid more than **USD 100 millions per year** just to publish their job openings **to one single job portal**.
 
-Needless to say, job portals typically **charge employeers regardless** of whether they fill the position or not. 
+Needless to say, job portals typically **charge employers regardless** of whether they fill the position or not. 
 
 ## Inefficient 
 

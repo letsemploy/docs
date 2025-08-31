@@ -6,8 +6,8 @@ You need **your own website**: e.g. www.example.com, on which you publish your j
 ## 2. Create a ojobpub.json
 Create file `/.well-known/ojobpub.json` (all lower case!) in a **specific JSON format containing structured meta information** about your job openings and link to the full job description on your website.
 
-!!! tip "file or application?"
-    We write about ojobpub.json to be a static file because it the simplest case, how to provide the data. But there is no limitation, that this endpoint could be an application or dynamic script to provide the data.
+!!! tip "File or Application?"
+    While we have used a static ojobpub.json file to demonstrate the simplest way to provide the data, this endpoint is not limited to a static file. It could just as easily be served by a dynamic application or script.
 
 ## 3. Validate
 
