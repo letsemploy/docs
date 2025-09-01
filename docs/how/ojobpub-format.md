@@ -28,6 +28,7 @@ In the following sample, we see first an `employer` object containing infos abou
 Later we find a list of open job positions, called *vacancies*. In the sample, we only see one vacancy but there is currently no limit how many vacancy entries you add. 
 
 ```json
+{
     "employer": {
         "name": "Acme Corp",
         "location": {
