@@ -1,7 +1,5 @@
 # Our Solution
 
-![](static/nutshell.png)
-
 ## Use your own Website
 
 So, we ask ourselves:
@@ -11,6 +9,8 @@ So, we ask ourselves:
 Actually, we don't! 
 
 The **World Wide Web** is a vast, **distributed database** where websites are stored all over the globe, not on a single, centralized platform. 
+
+![](static/nutshell_1.png)
 
 ## Structured Data
 
@@ -32,6 +32,9 @@ This means they are aware of the data's context, allowing them to optimize how o
 
 As a result, job openings can be indexed by **multiple search engines** without further efforts and without any additional cost.
 
+![](static/nutshell_2.png){ height="100" }
+
+
 ## Keep the Control
 
 > Why use metadata instead of full job descriptions?
@@ -41,3 +44,5 @@ The metadata you provide will be stored as an index by search engines, we can't 
 That is why **only as much information as necessary** is provided. This strategy ensures that there is just enough information to pique a candidate's interest and **send them to the employer's website**. 
 
 This is crucial because employers keep **control of the application process**.
+
+![](static/nutshell_3.png)
