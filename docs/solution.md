@@ -1,20 +1,24 @@
 # Our Solution
 
-## Use your own Website
+How we want to address the issues:
 
-So, we ask ourselves:
+- On Your Website
+- Structured Meta Data
+- Well-Known Location
 
-> Why do we even need to post job openings on commercial portals?!
+## On your Website
 
-Actually, we don't! 
+Having a website is almost a given for a company, and the cost of a website has never been lower than it is today.
 
-The **World Wide Web** is a vast, **distributed database** where websites are stored all over the globe, not on a single, centralized platform. 
+We still believe that publishing job vacancies on your **own website is the best and most cost-effective solution**, as you have full control and the data belongs to you.
 
-![](static/nutshell_1.png)
+However, we believe that something is missing. An element that makes this actually work and ensures that your job postings are found by applicants.
 
-## Structured Data
+![](static/nutshell_1.png){ height="100" }
 
-Because there's **no standard format** (yet) for published job data on websites, job information can vary widely — from a simple list of jobs to a searchable input field to query jobs to an individual pages for each opening. 
+## Structured Meta Data
+
+Because there's **no wide adopted standard format** for published job data on websites, job information can vary widely — from a simple list of jobs to a searchable input field to query jobs to an individual pages for each opening. 
 
 This lack of consistency and structure **makes it difficult for search engines** to accurately recognize the context as job openings.
 
@@ -24,9 +28,7 @@ A simplistic, minimalistic, structured data file containing **meta information**
 
 ## Predefined Path
 
-> How can this data be found?
-
-By placing a metadata file at a **specific**, **predetermined path**, we can ensure that search engines looking for job openings **know exactly where to find the data**. 
+Inspired by robots.txt or sitemap.xml, we place a metadata file at a **specific**, **predetermined path**, we can ensure that search engines looking for job openings **know exactly where to find the data**. 
 
 This means they are aware of the data's context, allowing them to optimize how often they revisit to update their index.
 
@@ -34,10 +36,7 @@ As a result, job openings can be indexed by **multiple search engines** without 
 
 ![](static/nutshell_2.png){ height="100" }
 
-
 ## Keep the Control
-
-> Why use metadata instead of full job descriptions?
 
 The metadata you provide will be stored as an index by search engines, we can't control how long they keep that data.
 
