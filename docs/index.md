@@ -14,4 +14,4 @@ oJobPub is an initiative with the goal, to create a free, simple and efficient p
 
 ## No Goals
 
-- [ ] oJobPub.org is **not** meant to be *another job board*, even though we might publish collect jobs publish using oJobPub just as a *PoC*.
+oJobPub.org is **not** meant to be *another job board*, even though we might publish collect jobs publish using oJobPub just as a *PoC*.

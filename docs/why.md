@@ -10,7 +10,7 @@ Let's look at three topics regarding job postings:
 
 Publishing and finding jobs is a huge market. Nowadays there are **hundrets or thousands** of job portals, job boards and career platforms world wide. 
 
-An estimated **34.4 USD billion** is spent annually on online job advertisements. This figure for 2023 underscores the immense importance of online job boards and career platforms in modern human resources management. The market for online job ads is a central component of the global recruiting industry. These figures come from Staffing Industry Analysts (SIA), a leading analysis firm in the field of human resources management.
+An estimated **USD 34.4 billion** is spent annually on online job advertisements. This figure for 2023 underscores the immense importance of online job boards and career platforms in modern human resources management. The market for online job ads is a central component of the global recruiting industry. These figures come from Staffing Industry Analysts (SIA), a leading analysis firm in the field of human resources management.
 
 Needless to say, job portals typically **charge employers regardless** of whether they fill the position or not. 
 

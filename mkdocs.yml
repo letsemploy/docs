@@ -1,4 +1,9 @@
 site_name: "oJobPub - Open Job Publishing Initiative"
+site_description: "oJobPub is a community-driven effort to create an open standard for publishing job listings in a structured format, making it easier for job seekers and employers to connect."
+site_url: https://www.ojobpub.org/
+
+repo_url: https://github.com/ojobpub/docs
+edit_uri: edit/main/docs/
 
 nav:
   - Intro: index.md
@@ -11,6 +16,11 @@ nav:
   - About: project.md
  
 theme:
+  name: material
+  features:
+    - navigation.tabs
+    - content.action.edit
+    - content.action.view
   font: false
   logo: static/logo.png
   palette:
@@ -32,9 +42,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  name: material
-  features:
-    - navigation.tabs
+
 
 markdown_extensions:
   - pymdownx.highlight:
