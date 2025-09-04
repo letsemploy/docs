@@ -24,6 +24,14 @@ This helps us to see, how things are growing. Once this format is known and etab
 ## 5. Spread the Word
 
 Let others know you are publishing job openings using oJobPub by **adding a link** on your job site:
+
+[![Supports oJobPub.org](https://img.shields.io/badge/supports-ojobpub.org-purple)](https://ojobpub.org){:target="_blank"}
+
 ```html
-<a href="https://ojobpub.org">Supports oJobPub.org</a>
+<a href="https://ojobpub.org" target="_blank">
+  <img 
+    alt="Supports oJobPub.org" 
+    src="https://img.shields.io/badge/supports-ojobpub.org-purple" 
+    />
+</a>
 ```
