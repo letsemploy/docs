@@ -28,7 +28,7 @@ Publishing a job on **multiple portals** often means to *copy/paste* data and **
 
 It is **not obvious to find the criteria** to decide on which portal they have the best chances to find a candidate.
 
-We think, this is rediculous unneccessary: As an employer we want to publish the job on **one location** and **spread** the info.
+We find this unnecessary and impractical: as employers, we want to advertise the position in **one place** and **distribute** the information.
 
 We think, our solution might be the missing piece to make it work.
 
