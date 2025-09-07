@@ -2,17 +2,17 @@
 
 How we want to address the issues:
 
-- On Your Website
+- Use Your Website
 - Structured Meta Data
 - Well-Known Location
 
 ## On your Website
 
-Having a website is almost a given for a company, and the cost of a website has never been lower than it is today.
+Having a website is almost a given for a company nowadays, and the cost of a website has never been lower than it is today.
 
 We still believe that publishing job vacancies on your **own website is the best and most cost-effective solution**, as you have full control and the data belongs to you.
 
-However, we believe that something is missing. An element that makes this actually work and ensures that your job postings are found by applicants.
+However, jobs only get found by using search engines, but the experience in finding jobs using Google or any other common search engine is not great. We believe that something is missing. An element that makes it actually work and ensures that your job postings are found by applicants.
 
 ![](static/nutshell_1.png){ height="100" }
 
