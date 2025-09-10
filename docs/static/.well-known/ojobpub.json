@@ -1,0 +1,35 @@
+{
+    "employer": {
+        "name": "Acme Corp",
+        "location": {
+            "city": "New York",
+            "country": "US"
+        },
+        "industry": "Software",
+        "url": "https://example.com"
+    },
+    "vacancies": [
+        {
+            "datePublished": "2025-08-30",
+            "jobCategory": "Engineering",
+            "jobTitle": "Software Engineer",
+            "jobRef": "SE-2023-001",
+            "applyBefore": "2026-12-31",
+            "language": "en",
+            "jobDescription": "Develop and maintain software applications.",
+            "jobType": "permanent",
+            "workType": "hybrid",
+            "experienceLevel": "mid",
+            "workLoad": {
+                "minPercentage": 80,
+                "maxPercentage": 100
+            },
+            "tags": ["python", "flask", "backend"],
+            "location": {
+                "city": "Amsterdam",
+                "country": "NL"
+            },
+            "jobUrl": "https://example.com/job/1"
+        }
+    ]
+}
