@@ -29,6 +29,8 @@ Later we find a list of open job positions, called *vacancies*. In the sample, w
 
 ```json
 {
+    "version": "1.0",
+    "lastUpdated": "2025-09-13T12:00:00Z",
     "employer": {
         "name": "Acme Corp",
         "location": {
