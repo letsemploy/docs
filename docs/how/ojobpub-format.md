@@ -17,7 +17,7 @@ JSON (JavaScript Object Notation) is an open, lightweight, text-based data struc
 
 ## oJobPub JSON
 
-A possible output could look like the sample below, however, some of the (blue) keys (e.g. `workload` or `jobDescription`) are optional while others are required (e.g. `jobTitle`). This is why we also provide a [oJobPub JSON Schema](https://raw.githubusercontent.com/ojobpub/schema/refs/heads/main/v1/ojobpub.json) and an online validator tool [validator.ojobpub.org](https://validator.ojobpub.org) to allow verification of the data structure.
+A possible output could look like the sample below, however, some of the (blue) keys (e.g. `workload` or `jobDescription`) are optional while others are required (e.g. `jobTitle`). This is why we also provide a [oJobPub JSON Schema](https://raw.githubusercontent.com/ojobpub/schema/refs/heads/main/v1/ojobpub.json) and an online validator tool [validator.ojobpub.org](https://validator.ojobpub.org) to allow verification of the data structure. Atlassian Inc. made a [JSON Schema Viewer](https://json-schema.app/view/%23?url=https%3A%2F%2Fraw.githubusercontent.com%2Fojobpub%2Fschema%2Frefs%2Fheads%2Fmain%2Fv1%2Fojobpub.json) to browse through the schema.
 
 
 !!! note
