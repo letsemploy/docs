@@ -40,15 +40,15 @@ Later we find a list of open job positions, called *vacancies*. In the sample, w
         "industry": "Software",
         "url": "https://example.com"
     },
-    "vacancies": [
+    "jobs": [
         {
-            "datePublished": "2025-08-30",
-            "jobCategory": "Engineering",
-            "jobTitle": "Software Engineer",
-            "jobRef": "SE-2023-001",
+            "publishedAt": "2025-08-30",
+            "category": "Engineering",
+            "title": "Software Engineer",
+            "referenceId": "SE-2023-001",
             "applyBefore": "2026-12-31",
             "language": "en",
-            "jobDescription": "Develop and maintain software applications.",
+            "description": "Develop and maintain software applications.",
             "jobType": "permanent",
             "workType": "hybrid",
             "experienceLevel": "mid",
@@ -57,11 +57,24 @@ Later we find a list of open job positions, called *vacancies*. In the sample, w
                 "maxPercentage": 100
             },
             "tags": ["python", "flask", "backend"],
-            "location": {
-                "city": "Amsterdam",
-                "country": "NL"
+            "locations":
+            [
+                {
+                    "city": "New York",
+                    "country": "US"
+                },
+                {
+                    "city": "San Francisco",
+                    "country": "US"
+                }
+            ],
+            "salary": {
+                "minAmount": 70000,
+                "maxAmount": 120000,
+                "currency": "USD",
+                "period": "yearly"
             },
-            "jobUrl": "https://example.com/job/1"
+            "url": "https://example.com/job/1"
         }
     ]
 }
