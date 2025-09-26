@@ -25,7 +25,7 @@ A possible output could look like the sample below, however, some of the (blue) 
 
 In the following sample, we see first an `employer` object containing infos about the company: *name*, *location*, *industry*, (main website) *url*. 
 
-Later we find a list of open job positions, called *vacancies*. In the sample, we only see one vacancy but there is currently no limit how many vacancy entries you add. 
+Later we find a list of vacancies, called *jobs*. In the sample, we only see one vacancy/job but there is currently no limit how many job entries you add. 
 
 ```json
 {
