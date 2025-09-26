@@ -10,11 +10,16 @@ There is also another schema: [*json-job*](http://lukasz-madon.github.io/json-jo
 
 ## How to find all domains that using ojobpub?
 
-TBD
+We are currently working on free web service which allows to create an initial index of your published jobs with statistics. This web service will provide an free service (under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) to show all domains using ojobpub.
 
 ## How to search for jobs published by ojobpub?
 
-TBD
+We are currently working on free web service which allows to create an initial index of your published jobs with statistics. This service will provide a free service to search for jobs.
+
+
+## I have an idea and want to start a discussion, where should I place it?
+
+We use [GitHub discussions](https://github.com/ojobpub/docs/discussions) for ideas. feature requests and general discussions. 
 
 
 
