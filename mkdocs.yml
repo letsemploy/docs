@@ -1,20 +1,22 @@
-site_name: "oJobPub - Open Job Publishing Initiative"
-site_description: "oJobPub is a community-driven effort to create an open standard for publishing job listings in a structured format, making it easier for job seekers and employers to connect."
-site_url: https://www.ojobpub.org/
+site_name: "Let's Employ - Documentation"
+site_description: "Let's Employ is a community-driven effort to create an open standard for publishing job listings in a structured format, making it easier for job seekers and employers to connect."
+site_url: https://docs.letsemploy.org/
 
-repo_url: https://github.com/ojobpub/docs
+repo_url: https://github.com/letsemploy/docs
 edit_uri: edit/main/docs/
 
 nav:
-  - Intro: index.md
+  - About:
+    - Intro: index.md
+    - Quickstart: how/index.md
   - Why: why.md
   - Solution: solution.md
   - How:
-    - Overview: how/index.md
+    - Quickstart: how/index.md
     - ojobpub.json: how/ojobpub-format.md
   - FAQ: faq.md
-  - About: project.md
- 
+  - Project: project.md
+
 theme:
   name: material
   features:
@@ -63,7 +65,7 @@ plugins:
   - minify:
       minify_html: true
 copyright: |
-  oJobPub.org © 2025
+  LetsEmploy.org © 2025
 
 extra:
   generator: true

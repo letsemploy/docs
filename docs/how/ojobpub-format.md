@@ -9,7 +9,7 @@ Before we go to oJobPub JSON, let's clearify two terms:
 
 ## What is JSON
 
-JSON (JavaScript Object Notation) is an open, lightweight, text-based data structure format used to store and interchange data. Primarly for machines to write and read while still writable and readable by humans. 
+JSON (JavaScript Object Notation) is an open, lightweight, text-based data structure format used to store and interchange data. Primarly for machines to write and read while still writable and readable by humans.
 
 ## What is a JSON Schema
 
@@ -17,15 +17,15 @@ JSON (JavaScript Object Notation) is an open, lightweight, text-based data struc
 
 ## oJobPub JSON
 
-A possible output could look like the sample below, however, some of the (blue) keys (e.g. `workload` or `jobDescription`) are optional while others are required (e.g. `jobTitle`). This is why we also provide a [oJobPub JSON Schema](https://raw.githubusercontent.com/ojobpub/schema/refs/heads/main/v1/ojobpub.json) and an online validator tool [validator.ojobpub.org](https://validator.ojobpub.org) to allow verification of the data structure. Atlassian Inc. made a [JSON Schema Viewer](https://json-schema.app/view/%23?url=https%3A%2F%2Fraw.githubusercontent.com%2Fojobpub%2Fschema%2Frefs%2Fheads%2Fmain%2Fv1%2Fojobpub.json) to browse through the schema.
+A possible output could look like the sample below, however, some of the (blue) keys (e.g. `workload` or `jobDescription`) are optional while others are required (e.g. `jobTitle`). This is why we also provide a [oJobPub JSON Schema](https://raw.githubusercontent.com/letsemploy/schema/refs/heads/main/v1/ojobpub.json) and an online validator tool [validator.letsemploy.org](https://validator.letsemploy.org) to allow verification of the data structure. Atlassian Inc. made a [JSON Schema Viewer](https://json-schema.app/view/%23?url=https%3A%2F%2Fraw.githubusercontent.com%2Fojobpub%2Fschema%2Frefs%2Fheads%2Fmain%2Fv1%2Fojobpub.json) to browse through the schema.
 
 
 !!! note
     JSON might look complicated if you're not familiar with it, but don't worry — you won't have to write it by hand. Once this format is finalized, we'll provide tools to help you generate and validate the structure.
 
-In the following sample, we see first an `employer` object containing infos about the company: *name*, *location*, *industry*, (main website) *url*. 
+In the following sample, we see first an `employer` object containing infos about the company: *name*, *location*, *industry*, (main website) *url*.
 
-Later we find a list of vacancies, called *jobs*. In the sample, we only see one vacancy/job but there is currently no limit how many job entries you add. 
+Later we find a list of vacancies, called *jobs*. In the sample, we only see one vacancy/job but there is currently no limit how many job entries you add.
 
 ```json
 {
@@ -83,5 +83,5 @@ Later we find a list of vacancies, called *jobs*. In the sample, we only see one
 1. The `employer` json object with minimal information about the employer.
 2. The list of `vacancies` objects with meta information about the job openings.
 
-!!! tip 
+!!! tip
     While not all properties are required for a valid file, we highly recommend you fill out as much metadata as possible.

@@ -13,11 +13,11 @@ Create a file `/.well-known/ojobpub.json` (all lower case!) in a **specific JSON
 
 ## 3. Validate
 
-To validate the JSON data format, we provide a [oJobPub JSON schema](https://github.com/ojobpub/schema) and an app [validator.ojobpub.org](https://validator.ojobpub.org) to help validate the data file.
+To validate the JSON data format, we provide a [LetsEmploy's oJobPub JSON schema](https://github.com/letsemploy/schema) and an app [validator.letsemploy.org](https://validator.letsemploy.org) to help validate the data file.
 
 ## 4. Let's index
 
-Go to [index.ojobpub.org](https://index.ojobpub.org), enter your domain (fqdn) and **let us index your jobs**! 
+Go to [jobs.letsemploy.org](https://jobs.letsemploy.org), enter your domain (fqdn) and **let us index your jobs**!
 
 This helps us to see, how things are growing. Once this format is known and etablished, this step may become obsolete (hopefully!). Job crawlers can get all the domains from us for free using an API.
 
@@ -25,13 +25,13 @@ This helps us to see, how things are growing. Once this format is known and etab
 
 Let others know you are publishing job openings using oJobPub by **adding a link** on your job site:
 
-[![Supports oJobPub.org](https://img.shields.io/badge/supports-ojobpub.org-purple)](https://ojobpub.org){:target="_blank"}
+[![Supports LetsEmploy.org](https://img.shields.io/badge/supports-LetsEmploy.org-purple)](https://letsemploy.org){:target="_blank"}
 
 ```html
-<a href="https://ojobpub.org" target="_blank">
-  <img 
-    alt="Supports oJobPub.org" 
-    src="https://img.shields.io/badge/supports-ojobpub.org-purple" 
+<a href="https://letsemploy.org" target="_blank">
+  <img
+    alt="Supports LetsEmploy.org"
+    src="https://img.shields.io/badge/supports-LetsEmploy.org-purple"
     />
 </a>
 ```
