@@ -1,0 +1,214 @@
+{
+    "$id": "https://github.com/ojobpub/schema/v1/ojobpub.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "oJobPub - Open Job Publishing Initiative",
+    "type": "object",
+    "properties": {
+        "version": {
+            "description": "Version of the oJobPub schema",
+            "type": "string",
+            "const": "1.0"
+        },
+        "lastUpdated": {
+            "description": "Date when the oJobPub feed was last updated",
+            "type": "string",
+            "format": "date-time"
+        },
+        "employer": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 255
+                },
+                "location": {
+                    "description": "Employer's headquarters",
+                    "$ref": "#/$defs/location"
+                },
+                "industry": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 255
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri"
+                }
+            },
+            "required": ["name", "location"],
+            "additionalProperties": false
+        },
+        "jobs": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/job"
+            }
+        }
+    },
+    "required": [
+        "version",
+        "lastUpdated",
+        "employer",
+        "jobs"
+    ],
+    "additionalProperties": false,
+    "$defs": {
+        "location": {
+            "type": "object",
+            "properties": {
+                "city": {
+                    "description": "City",
+                    "type": "string"
+                },
+                "country": {
+                    "description": "Country code as ISO 3166-1 alpha-2: see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2",
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 2
+                }
+            }
+        },
+        "job": {
+            "type": "object",
+            "properties": {
+                "language": {
+                    "description": "Language of the job description as ISO 639-1:2002. See https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes",
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 2
+                },
+                "publishedAt": {
+                    "description": "Date when the job was first published",
+                    "type": "string",
+                    "format": "date"
+                },
+                "startDate": {
+                    "description": "Date when the job starts",
+                    "type": "string",
+                    "format": "date"
+                },
+                "endDate": {
+                    "description": "Date when the job ends",
+                    "type": "string",
+                    "format": "date"
+                },
+                "applyBefore": {
+                    "description": "Date until the job is valid",
+                    "type": "string",
+                    "format": "date"
+                },
+                "category": {
+                    "description": "Category of the job: e.g. Engineering, Marketing, Salesq",
+                    "type": "string",
+                    "maxLength": 255
+                },
+                "referenceId": {
+                    "description": "Employer's job reference ID",
+                    "type": "string",
+                    "maxLength": 255
+                },
+                "title": {
+                    "description": "Title of the job",
+                    "type": "string",
+                    "maxLength": 255
+                },
+                "description": {
+                    "description": "Description of the job",
+                    "type": "string",
+                    "maxLength": 1000
+                },
+                "jobType": {
+                    "type": "string",
+                    "enum": ["permanent", "contract", "internship", "apprenticeship", "temporary", "volunteer", "freelance"]
+                },
+                "experienceLevel": {
+                    "description": "Experience level required for the job",
+                    "type": "string",
+                    "enum": ["junior", "mid", "senior", "lead", "manager", "director", "executive"]
+                },
+                "workLoad": {
+                    "description": "Expected workload in percentage for the job",
+                    "type": "object",
+                    "properties": {
+                        "minPercentage": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100
+                        },
+                        "maxPercentage": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 100
+                        }
+                    }
+                },
+                "workType": {
+                    "description": "Type of work for the job",
+                    "type": "string",
+                    "enum": ["remote", "on-site", "hybrid"]
+                },
+                "salary": {
+                    "description": "Salary range for the job",
+                    "type": "object",
+                    "properties": {
+                        "min": {
+                            "description": "Minimum salary to expect",
+                            "type": "number",
+                            "minimum": 0
+
+                        },
+                        "max": {
+                            "description": "Maximum salary to expect",
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        "currency": {
+                            "description": "Currency as ISO 4217: see https://en.wikipedia.org/wiki/ISO_4217",
+                            "type": "string",
+                            "minLength": 3,
+                            "maxLength": 3
+                        },
+                        "interval": {
+                            "description": "Min/max salary interval, e.g. per hour, per month, per year",
+                            "type": "string",
+                            "enum": ["hourly", "daily", "weekly", "monthly", "yearly"]
+                        }
+                    }
+                },
+                "tags": {
+                    "description": "Key words for the job",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "maxLength": 28
+                    },
+                    "maxItems": 16,
+                    "uniqueItems": true
+                },
+                "locations": {
+                    "description": "Locations of the job",
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "$ref": "#/$defs/location"
+                    }
+                },
+                "url": {
+                    "description": "URL of the job's full description",
+                    "type": "string",
+                    "format": "uri"
+                }
+            },
+            "required": [
+                "publishedAt",
+                "title",
+                "jobType",
+                "language",
+                "locations",
+                "url"
+            ],
+            "additionalProperties": false
+        }
+    }
+}

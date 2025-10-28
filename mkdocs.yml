@@ -13,7 +13,8 @@ nav:
   - Solution: solution.md
   - How:
     - Quickstart: how/index.md
-    - ojobpub.json: how/ojobpub-format.md
+    - About ojobpub.json: how/ojobpub-format.md
+    - ojobpub Schema: how/ojobpub-schema.md
   - FAQ: faq.md
   - Project: project.md
 
@@ -64,6 +65,7 @@ plugins:
   - search
   - minify:
       minify_html: true
+
 copyright: |
   LetsEmploy.org © 2025
 
@@ -71,7 +73,7 @@ extra:
   generator: true
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/ojobpub/docs
+      link: https://github.com/letsemploy/docs
 
 extra_css:
   - stylesheets/extra.css
