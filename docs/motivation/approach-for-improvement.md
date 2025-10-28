@@ -25,7 +25,7 @@ This lack of consistency and structure **makes it difficult for search engines**
 
 While we still **want to keep our content** on our own website rather than on commercial platforms that sell our data, the challenge is **making that content discoverable**.
 
-A simplistic, minimalistic, structured data file containing **meta information** about your job opening and a **link to your detailed job page** should be good enough!
+A simplistic, minimalistic, structured data file containing **meta information** about your job opening and a **link to your detailed job page** should be good enough! Welcome to [oJobPub](../implementation/ojobpub-format.md).
 
 ## Predefined Path
 
