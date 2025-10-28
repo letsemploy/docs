@@ -1,5 +1,3 @@
-# oJobPub Docs and Website
+# Docs about Letsenploy
 
-oJobPub is an initiative with the goal, to create a free, simple and efficient process to publish your vacancies on your own website and make it easy, simple and efficient to collect the data for everyone.
-
-Read more about on https://www.ojobpub.org/
+Read more about on https://docs.letsemploy.org
