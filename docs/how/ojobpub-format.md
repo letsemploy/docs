@@ -1,6 +1,6 @@
 # oJobPub JSON Format
 
-oJobPub is meant to be minimalistic, mainly containing meta infos about the job and a short job description, a summary. It is not meant to have all possible data of a job posting: e.g. the process of application is and will not be covered.
+oJobPub is our minimalistic data format as JSON, containing meta infos about the job and a short job description, a summary. It is **not** meant to have all possible data of a job posting: e.g. the process of application is and will not be covered.
 
 Before we go to oJobPub JSON, let's clearify two terms:
 
