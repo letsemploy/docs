@@ -1,3 +1,6 @@
 [data-md-color-scheme="black"] {
   --md-primary-fg-color: #0a1318;
 }
+.md-grid {
+  max-width: 1440px;
+}
