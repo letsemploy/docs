@@ -20,11 +20,11 @@ We believe that a publishing job offerings is rediculous expensive, it should be
 
 ## Convenience
 
+Publishing a job on **multiple portals** often means to *copy/paste* data and **more work to publish and manage**. 
+
 Employers must decide on which of the many job portals they want to publish their job vacancies. An account must be created on each platform and all data must be entered separately into each of these portals.
 
-Publishing a job on **multiple portals** often means to *copy/paste* data and **more work to publish and manage**. This can take a lot of time to process.
-
-We find this process unnecessary and impractical - as employer, we want to advertise the position in **one place** and **distribute** the information - on our own website.
+We find this process unnecessary and impractical - as an employer, we want to advertise the position in **one place** and **distribute** the information - on our own website.
 
 We think, our solution might be the missing piece to make it work.
 
