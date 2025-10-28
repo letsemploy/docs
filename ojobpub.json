@@ -2,6 +2,7 @@
     "$id": "https://github.com/ojobpub/schema/v1/ojobpub.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "oJobPub - Open Job Publishing Initiative",
+    "description": "Meta data format to publish open jobs on your website.",
     "type": "object",
     "properties": {
         "version": {
@@ -15,9 +16,11 @@
             "format": "date-time"
         },
         "employer": {
+            "description": "Information about the employer offering the job",
             "type": "object",
             "properties": {
                 "name": {
+                    "description": "Employer's name",
                     "type": "string",
                     "minLength": 1,
                     "maxLength": 255
@@ -27,11 +30,13 @@
                     "$ref": "#/$defs/location"
                 },
                 "industry": {
+                    "description": "Industry of the employer, e.g. Software, Finance, Healthcare",
                     "type": "string",
                     "minLength": 1,
                     "maxLength": 255
                 },
                 "url": {
+                    "description": "Employer's main website URL, e.g. https://www.example.com",
                     "type": "string",
                     "format": "uri"
                 }
@@ -40,6 +45,7 @@
             "additionalProperties": false
         },
         "jobs": {
+            "description": "List of job openings offered by the employer",
             "type": "array",
             "items": {
                 "$ref": "#/$defs/job"
@@ -55,14 +61,15 @@
     "additionalProperties": false,
     "$defs": {
         "location": {
+            "description": "Location information",
             "type": "object",
             "properties": {
                 "city": {
-                    "description": "City",
+                    "description": "City e.g. San Francisco",
                     "type": "string"
                 },
                 "country": {
-                    "description": "Country code as ISO 3166-1 alpha-2: see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2",
+                    "description": "Country code as ISO 3166-1 alpha-2, e.g. US, DE, CH. Also see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2",
                     "type": "string",
                     "minLength": 2,
                     "maxLength": 2
@@ -70,6 +77,7 @@
             }
         },
         "job": {
+            "description": "Job opening information",
             "type": "object",
             "properties": {
                 "language": {
@@ -104,7 +112,7 @@
                     "maxLength": 255
                 },
                 "referenceId": {
-                    "description": "Employer's job reference ID",
+                    "description": "Job reference identifier, e.g. internal job ID",
                     "type": "string",
                     "maxLength": 255
                 },
@@ -119,6 +127,7 @@
                     "maxLength": 1000
                 },
                 "jobType": {
+                    "description": "Type of the job",
                     "type": "string",
                     "enum": ["permanent", "contract", "internship", "apprenticeship", "temporary", "volunteer", "freelance"]
                 },
@@ -132,11 +141,13 @@
                     "type": "object",
                     "properties": {
                         "minPercentage": {
+                            "description": "Minimum expected workload in percentage",
                             "type": "number",
                             "minimum": 0,
                             "maximum": 100
                         },
                         "maxPercentage": {
+                            "description": "Maximum expected workload in percentage",
                             "type": "number",
                             "minimum": 0,
                             "maximum": 100
@@ -177,7 +188,7 @@
                     }
                 },
                 "tags": {
-                    "description": "Key words for the job",
+                    "description": "Key words for the job, e.g. skills, technologies, etc.",
                     "type": "array",
                     "items": {
                         "type": "string",
@@ -195,7 +206,7 @@
                     }
                 },
                 "url": {
-                    "description": "URL of the job's full description",
+                    "description": "URL of the job's full description and application page",
                     "type": "string",
                     "format": "uri"
                 }

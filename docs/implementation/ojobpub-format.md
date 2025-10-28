@@ -1,12 +1,14 @@
-# About oJobPub JSON Format
+# About oJobPub.json
 
-oJobPub is our minimalistic data format in JSON ([Wikipedia](https://en.wikipedia.org/wiki/JSON)), containing meta infos about your job openings.
+oJobPub is our minimalistic data file in JSON ([Wikipedia](https://en.wikipedia.org/wiki/JSON)), containing meta infos about your job openings.
 
-## oJobPub JSON
+It must be placed in a defined path in your web hosting: `<yourdomain.tld>/.well-known/ojobpub.json`.
+
+## oJobPub Format
 
 In the following sample, we see first an `employer` object containing infos about the company: *name*, *location*, *industry*, (main website) *url*.
 
-Later we find a list of jobs. In the sample, we only see one job but there is currently no limit how many job entries you add.
+Later we find a list of jobs. There is only one job in the sample but there is currently no limit how many job entries you add.
 
 ```json
 {

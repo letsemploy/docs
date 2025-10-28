@@ -8,13 +8,14 @@ edit_uri: edit/main/docs/
 nav:
   - About:
     - Intro: index.md
-    - Quickstart: how/index.md
-  - Why: why.md
-  - Solution: solution.md
-  - How:
-    - Quickstart: how/index.md
-    - About ojobpub.json: how/ojobpub-format.md
-    - ojobpub Schema: how/ojobpub-schema.md
+    - Quickstart: implementation/quickstart.md
+  - Motivation:
+    - Why: motivation/why.md
+    - Our Approach: motivation/approach-for-improvement.md
+  - Implementation:
+    - Quickstart: implementation/quickstart.md
+    - About ojobpub.json: implementation/ojobpub-format.md
+    - ojobpub Schema: implementation/ojobpub-schema.md
   - FAQ: faq.md
   - Project: project.md
 
@@ -25,7 +26,7 @@ theme:
     - content.action.edit
     - content.action.view
   font: false
-  logo: static/logo.png
+  logo: static/logo_tp.png
   palette:
     - media: "(prefers-color-scheme)"
       toggle:

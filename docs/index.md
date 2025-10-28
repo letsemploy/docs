@@ -2,7 +2,7 @@
 
 "Let's Employ" is an initiative with the following goals:
 
-Create a free, simple and convenient process to publish and find your vacancies on your own website. Make it simple and efficient to collect the data for everyone with help of a standardised job meta data format [_ojobpub.json_](./how/ojobpub-format.md).
+Create a free, simple and convenient process to publish and find your vacancies on your own website. Make it simple and efficient to collect the data for everyone with help of a standardised job meta data format [_ojobpub.json_](./implementation/ojobpub-format.md).
 
 ## Benfits
 

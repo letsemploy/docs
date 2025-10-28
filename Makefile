@@ -19,6 +19,6 @@ run:
 	mkdocs serve -w docs
 
 schema-doc:
-	rm -f docs/how/ojobpub-schema.md
-	echo "---\nhide:\n- toc\n---" > docs/how/ojobpub-schema.md
-	jsonschema-markdown --no-footer --resolve ojobpub.json >> docs/how/ojobpub-schema.md
+	rm -f docs/implementation/ojobpub-schema.md
+	echo "---\nhide:\n- toc\n---" > docs/implementation/ojobpub-schema.md
+	jsonschema-markdown --no-footer --resolve ojobpub.json >> docs/implementation/ojobpub-schema.md
