@@ -19,6 +19,8 @@ run:
 	mkdocs serve -w docs
 
 schema-doc:
+	wget -O ojobpub.json https://raw.githubusercontent.com/letsemploy/schema/refs/heads/main/v1/ojobpub.json
 	rm -f docs/implementation/ojobpub-schema.md
 	echo "---\nhide:\n- toc\n---" > docs/implementation/ojobpub-schema.md
 	jsonschema-markdown --no-footer --resolve ojobpub.json >> docs/implementation/ojobpub-schema.md
+	rm -f ojobpub.json
