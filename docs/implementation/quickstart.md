@@ -8,14 +8,13 @@ You need **your own domain and website**: e.g. www.example.com.
 There you publish your job openings as web page. This can be using a CMS, static site generator or plain HTML, as you like.
 
 ## 2. Create ojobpub.json
-Create an [ojobpub.json](./ojobpub-format.md) in the path `/.well-known/ojobpub.json` (all lower case!) in a **specific JSON format containing structured meta information** about your job openings and link to the full job description on your website.
+Create an [ojobpub.json](./ojobpub-format.md) in the path `/.well-known/ojobpub.json` (all lower case!) in a **specific JSON format containing structured meta information** about your job openings and link to the full job description on your website. 
 
 !!! tip "File or Application?"
-    While we have used a static ojobpub.json file to demonstrate the simplest way to provide the data, this endpoint is not limited to a static file. It could just as easily be served by a dynamic application or script.
+    While we have used a static ojobpub.json file to demonstrate the simplest way to provide the data, this endpoint is not limited to a static file. It could just as easily be served by a dynamic application or script. An open source tool to help creating a ojobpub.json is currently in development.
 
 ## 3. Validate
-
-To validate the JSON data format, we provide a [LetsEmploy's oJobPub JSON schema](https://github.com/letsemploy/schema) and a validator app [validator.letsemploy.org](https://validator.letsemploy.org) to help validate the structure.
+To ensure your ojobpub.json's data is valid, we provide a [oJobPub JSON schema](https://github.com/letsemploy/schema) and a validator app [validator.letsemploy.org](https://validator.letsemploy.org).
 
 ## 4. Let us know
 
@@ -25,7 +24,7 @@ This helps us to see, how things are growing. Once this format is known and etab
 
 ## 5. Spread the Word
 
-Let others know you are publishing job openings using oJobPub by **adding a link** on your job site:
+We would appreciate if you let others know, you publish your job openings using oJobPub by **adding a link** on your job site:
 
 [![Supports LetsEmploy.org](https://img.shields.io/badge/supports-LetsEmploy.org-purple)](https://letsemploy.org){:target="_blank"}
 
