@@ -5,7 +5,7 @@ There are 5 easy steps to revolutionize job publishing.
 ## 1. Website
 You need **your own domain and website**: e.g. www.example.com.
 
-There you publish your job openings as web page. This can be using a CMS, static site generator or plain HTML, as you like.
+You publish your full description of your job openings in a web page. This can be using a CMS, static site generator or plain HTML, as you like. As a result, your job opening are linkable like: https://www.example.com/career/job-product-manager/.
 
 ## 2. Create ojobpub.json
 Create an [ojobpub.json](./ojobpub-format.md) in the path `/.well-known/ojobpub.json` (all lower case!) in a **specific JSON format containing structured meta information** about your job openings and link to the full job description on your website. 
