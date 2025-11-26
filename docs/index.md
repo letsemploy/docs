@@ -11,6 +11,9 @@ Create a free, simple and convenient process to publish and find your vacancies 
 - [x] **Keep Control**: Employers keep control of their data and application process.
 - [x] **Free**: No additional costs beyond what employers already pay for your domain and web hosting.
 
-## Modus Operandi
+## How does it work?
+
+- Companies and Employeers publish their jobs on their own website, on a specific path, in a specific format.
+- Job search engines (read "everyone") can gather these data regularly and import them into their search index.
 
 ![](static/nutshell.png)
