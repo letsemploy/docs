@@ -22,7 +22,7 @@ A standard is only useful if it's widely adopted. This requires active engagemen
 
 Once the schema is mature and has received sufficient community feedback, you can pursue formal recognition.
 
-- [ ] **Write a Specification:** Turn the schema and its documentation into a formal specification document. This should include a detailed description of every field, data types, and any business rules.
+- [x] **Write a Specification:** Turn the schema and its documentation into a formal specification document. This should include a detailed description of every field, data types, and any business rules.
 
 ## 4. **Promote Adoption and Provide Tools**
 
