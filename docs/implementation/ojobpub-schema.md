@@ -4,7 +4,7 @@ hide:
 ---
 # oJobPub - Open Job Publishing Initiative
 
-Meta data format to publish open jobs on your website in a structured way.
+Meta data format to publish open jobs on your website in a structured way. For the raw JSON Schema, visit [https://github.com/letsemploy/schema].
 
 ### Type: `object`
 
