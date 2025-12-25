@@ -53,7 +53,7 @@ You can redirect to another domain like `https://jobs.example.com/just-an exampl
 === "Apache HTTPD"
 
     ```
-    <VirtualHost *:80>
+    <VirtualHost *:443>
       ServerName www.example.com
       ServerAlias example.com
 
