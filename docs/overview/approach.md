@@ -27,7 +27,7 @@ This lack of consistency and structure **makes it difficult for search engines**
 
 While we still **want to keep our content** on our own website rather than on commercial platforms that sell our data, the challenge is **making that content discoverable**.
 
-A simplistic, minimalistic, structured data file containing **meta information** about your job opening and a **link to your detailed job page** should be good enough! Welcome to [oJobPub](../implementation/ojobpub-format.md).
+A simplistic, minimalistic, structured data file containing **meta information** about your job opening and a **link to your detailed job page** should be good enough! Welcome to [oJobPub](../ojobpub/index.md).
 
 ## Predefined Location
 
@@ -36,7 +36,6 @@ A simplistic, minimalistic, structured data file containing **meta information**
 Inspired by robots.txt or sitemap.xml, we place a meta data file _ojobpub.json_ at a **specific**, **predetermined location** on your web hositng, we can ensure that search engines looking for job openings **know exactly where to find the data**: at `<your_domain>/.well-known/ojobpub.json`
 
 As a result, job openings can be indexed by **multiple search engines** without further efforts and without any additional cost as they are aware of the data's context.
-
 
 ## Keep the Control
 

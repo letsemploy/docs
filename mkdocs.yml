@@ -6,19 +6,28 @@ repo_url: https://github.com/letsemploy/docs
 edit_uri: edit/main/docs/
 
 nav:
-  - About:
-    - Intro: index.md
-    - Quickstart: implementation/quickstart.md
-  - Motivation:
-    - Why: motivation/why.md
-    - Our Approach: motivation/approach-for-improvement.md
-  - Implementation:
-    - Quickstart: implementation/quickstart.md
-    - About ojobpub.json: implementation/ojobpub-format.md
-    - ojobpub Schema: implementation/ojobpub-schema.md
-  - FAQ: faq.md
-  - Project: project.md
-  - LetsEmploy.org: https://letsemploy.org
+  - Intro: index.md
+  - Overview:
+    - Why: overview/why.md
+    - Our Approach: overview/approach.md
+    - How It Works: overview/how-it-works.md
+    - FAQ: overview/faq.md
+    - Project: overview/project.md
+
+  - Quickstart:
+    - Into: quickstart/index.md
+    - Requirements: quickstart/requirements.md
+    - OJobPub: quickstart/create.md
+    - Publish: quickstart/publish.md
+    - Let us Know: quickstart/let-us-know.md
+    - Spread the Word: quickstart/spread-the-word.md
+
+  - OJobPub:
+    - About: ojobpub/index.md
+    - Format: ojobpub/format.md
+    - Schema: ojobpub/schema.md
+
+  - letsemploy.org: //letsemploy.org
 
 theme:
   name: material
@@ -71,7 +80,7 @@ plugins:
       minify_html: true
 
 copyright: |
-  LetsEmploy.org © 2025
+  LetsEmploy.org © 2025-2026
 
 extra:
   generator: true
