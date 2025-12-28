@@ -11,15 +11,9 @@ There are a few ways to make ojobpub.json accessible:
 
 ## Local Path
 
-Save the ojobpub.json on your webserver's root path by creating a directory `.well-known/` (not the dot prefix).
+Save the ojobpub.json on your webserver's root path by creating a directory `.well-known/` (note the dot prefix).
 
 The root path of your website might look like something like `/var/www/example.com/`, so the file _ojobpub.json_ would be placed in `/var/www/example.com/.well-known/ojobpub.json`.
-
-## HTTP Redirects
-
-Creating a redirect to a different domain, vHost or path.
-
-### Different vHost
 
 If you have a website under https://www.example.com you can try what happens if you place the ojobpub.json in this `vhost` so it would be accessible like so `https://www.example.com/.well-known/ojobpub.json`.
 
@@ -32,12 +26,19 @@ location: https://www.example.com/.well-known/ojobpub.json
 server: Caddy
 content-length: 0
 date: Wed, 24 Dec 2025 10:59:51 GMT
-
 ```
 
-### Different Domain
+The interesting information is the `HTTP 302` which stands for "Redirection" and the `location: ...` where you can see the address. NOTE: This must not be just `https://www.example.com/` but the also the full path to ojobpub.json.
 
-You can redirect to another domain like `https://jobs.example.com/just-an example/ojobpub.json`.
+If test was not successful, read further about HTTP Redirects configuration options.
+
+## HTTP Redirects
+
+Creating a redirect to a different domain, vHost or path.
+
+### Different Domain / vhost
+
+You can redirect to another domain like `https://jobs.example.com/just-an example/ojobpub.json` or same domain but different path:
 
 === "Apache HTTPD"
 
@@ -46,7 +47,7 @@ You can redirect to another domain like `https://jobs.example.com/just-an exampl
       ServerName www.example.com
       ServerAlias example.com
 
-      Redirect "/.well-known/ojobpub.json" "https://jobs.example.com/just-an-example/ojobpub.json"
+      Redirect "/.well-known/ojobpub.json" "https://www.example.com/just-an-example/ojobpub.json"
     </VirtualHost>
     ```
 
