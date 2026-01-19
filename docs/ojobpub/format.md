@@ -50,10 +50,10 @@ Below you find a sample, how a ojobpub.json might look like. This is really just
                 }
             ],
             "salary": {
-                "minAmount": 70000,
-                "maxAmount": 120000,
+                "min": 70000,
+                "max": 120000,
                 "currency": "USD",
-                "period": "yearly"
+                "interval": "yearly"
             },
             "url": "https://example.com/job/1"
         }
