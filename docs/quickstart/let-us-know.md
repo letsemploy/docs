@@ -1,8 +1,8 @@
-# Let us track your jobs
+# Let us know and we track your jobs
 
 We provide a free web service called **SourceTracker** to fetch and verify ojobpub.json data regularly
 
-Visit https://sources.letsemploy.org to add your domain.
+Visit [sources.letsemploy.org](https://sources.letsemploy.org) to add your domain.
 
 ## Purpose
 
