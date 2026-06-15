@@ -46,3 +46,9 @@ The metadata you provide will be stored as an index by search engines, we can't 
 That is why **only as much information as necessary** is provided. This strategy ensures that there is just enough information to pique a candidate's interest and **send them to the employer's website**.
 
 This is crucial because employers keep **control of the application process**.
+
+
+## Big Picture
+
+![](/static/nutshell.png)
+
