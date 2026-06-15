@@ -1,6 +1,6 @@
 ## How to find all domains that using ojobpub?
 
-We will provide a free download service to get all the domains publishing vacancies as ojobpub.json.
+We provide a free download service at [sources.letsemploy.org](https://sources.letsemploy.org/exports) from where you get all the domains publishing vacancies as ojobpub.json. If you publish a ojobpub.json on your website, [let us know](https://sources.letsemploy.org/sources/new), so your data will be included.
 
 ## How to search for jobs published by ojobpub atm?
 
