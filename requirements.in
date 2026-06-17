@@ -4,3 +4,4 @@ mkdocs-macros-plugin
 mkdocs-git-revision-date-plugin
 mkdocs-minify-plugin
 jsonschema-markdown
+mkdocs-redirects

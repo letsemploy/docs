@@ -26,6 +26,14 @@ nav:
     - Format: ojobpub/format.md
     - Schema: ojobpub/schema.md
 
+  - Software and Services:
+    - Overview: resources/index.md
+    - SourceTracker: resources/sourcetracker.md
+    - Publisher: resources/publisher.md
+    # - Jobs Board: resources/jobs-board.md
+    - Validator: resources/validator.md
+    # - Tools: resources/tools.md
+
   - letsemploy.org: //letsemploy.org
 
 theme:
@@ -77,6 +85,9 @@ plugins:
   - search
   - minify:
       minify_html: true
+  - redirects:
+      redirect_maps:
+        'sourcetracker.md': 'resources/sourcetracker.md'
 
 copyright: |
   LetsEmploy.org © 2025-2026
