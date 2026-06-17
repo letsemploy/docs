@@ -97,6 +97,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/letsemploy/docs
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.social/@letsemploy_org
 
 extra_css:
   - stylesheets/extra.css
