@@ -13,7 +13,7 @@ Having a website is almost a given for a company nowadays, and the cost of a web
 
 We still believe that publishing job vacancies on your **own website is the best and most cost-effective solution**, as you have full control and the data belongs to you.
 
-However, these published vacancies only get found by using search engines, but the experience in finding jobs using Google or any other common search engine is not great. We believe that something is missing. An element that makes it actually work and ensures that your job postings are found by applicants.
+However, these published vacancies only get found by using search engines. We believe that something is missing: An element that makes it actually work and ensures that your job postings are found by applicants.
 
 
 ## Structured Meta Data
