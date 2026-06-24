@@ -215,9 +215,9 @@ The reference schema and validation tooling are available at:
 
 ## 9. Operational Guidance
 
-- Publishers SHOULD keep `lastUpdated` accurate whenever feed content changes.
+- Publishers MUST keep `lastUpdated` accurate whenever feed content changes.
 - Publishers SHOULD populate as many optional fields as practical to improve matching and discoverability.
-- Each job entry SHOULD point `url` to a publicly accessible page containing the full job description and application details.
+- Each job entry MUST set `url` to a publicly accessible page that SHOULD includes the complete job description and application details. The `url` MAY reference a domain different from the one hosting `.well-known/ojobpub.json`.
 
 ## 10. Security and Privacy Considerations
 
@@ -289,7 +289,7 @@ The reference schema and validation tooling are available at:
 
 ### 12.2 Informative References
 
-- LetsEmploy.org docs: https://docs.letsemploy.org
-- oJobPub docs: https://docs.letsemploy.org/ojobpub/
-- JSON: https://www.json.org
-- Well-Known URI concept: https://en.wikipedia.org/wiki/Well-known_URI
+- LetsEmploy.org Docs: [https://docs.letsemploy.org](https://docs.letsemploy.org)
+- oJobPub Docs: [https://docs.letsemploy.org/ojobpub/](https://docs.letsemploy.org/ojobpub/)
+- About JSON: [https://www.json.org](https://www.json.org)
+- About Well-Known URI concept: [https://en.wikipedia.org/wiki/Well-known_URI](https://en.wikipedia.org/wiki/Well-known_URI)
