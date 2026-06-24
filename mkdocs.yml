@@ -23,8 +23,8 @@ nav:
 
   - OJobPub:
     - About: ojobpub/index.md
-    - Format: ojobpub/format.md
-    - Schema: ojobpub/schema.md
+    - Specification: ojobpub/specification.md
+    - Schema Explanation: ojobpub/schema.md
 
   - Software and Services:
     - Overview: resources/index.md
@@ -88,6 +88,7 @@ plugins:
   - redirects:
       redirect_maps:
         'sourcetracker.md': 'resources/sourcetracker.md'
+        'ojobpub/format.md': 'ojobpub/specification.md'
 
 copyright: |
   LetsEmploy.org © 2025-2026
