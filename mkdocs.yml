@@ -1,39 +1,28 @@
 site_name: "Documentation - Let's Employ"
-site_description: "Let's Employ is a community-driven effort to create an open standard for publishing job listings in a structured format, making it easier for job seekers and employers to connect."
+site_description: "Technical documentation for oJobPub, the open JSON format for publishing job openings at a well-known URL, and the Let's Employ services around it."
 site_url: https://docs.letsemploy.org/
 
 repo_url: https://github.com/letsemploy/docs
 edit_uri: edit/main/docs/
 
 nav:
-  - Intro: index.md
-  - Overview:
-    - Why: overview/why.md
-    - Our Approach: overview/approach.md
-    - FAQ: overview/faq.md
-    - Project: overview/project.md
-
-  - Quickstart:
-    - Into: quickstart/index.md
-    - Requirements: quickstart/requirements.md
-    - OJobPub: quickstart/create.md
-    - Publish: quickstart/publish.md
-    - Let us Know: quickstart/let-us-know.md
-    - Spread the Word: quickstart/spread-the-word.md
-
-  - OJobPub:
-    - About: ojobpub/index.md
+  - Home: index.md
+  - Publishing:
+    - Overview: publishing/index.md
+    - Create the Feed: publishing/create.md
+    - Serve the Feed: publishing/serve.md
+    - Register: publishing/register.md
+  - Consuming: consuming/index.md
+  - oJobPub:
+    - Overview: ojobpub/index.md
     - Specification: ojobpub/specification.md
-    - Schema Explanation: ojobpub/schema.md
-
-  - Software and Services:
+    - Field Reference: ojobpub/schema.md
+  - Services:
     - Overview: resources/index.md
     - SourceTracker: resources/sourcetracker.md
     - Publisher: resources/publisher.md
-    # - Jobs Board: resources/jobs-board.md
     - Validator: resources/validator.md
-    # - Tools: resources/tools.md
-
+  - FAQ: faq.md
   - letsemploy.org: //letsemploy.org
 
 theme:
@@ -70,7 +59,11 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.details
   - admonition
   - attr_list
@@ -89,6 +82,16 @@ plugins:
       redirect_maps:
         'sourcetracker.md': 'resources/sourcetracker.md'
         'ojobpub/format.md': 'ojobpub/specification.md'
+        'overview/why.md': 'index.md'
+        'overview/approach.md': 'ojobpub/index.md'
+        'overview/project.md': 'index.md'
+        'overview/faq.md': 'faq.md'
+        'quickstart/index.md': 'publishing/index.md'
+        'quickstart/requirements.md': 'publishing/index.md'
+        'quickstart/create.md': 'publishing/create.md'
+        'quickstart/publish.md': 'publishing/serve.md'
+        'quickstart/let-us-know.md': 'publishing/register.md'
+        'quickstart/spread-the-word.md': 'publishing/register.md'
 
 copyright: |
   LetsEmploy.org © 2025-2026
@@ -99,7 +102,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/letsemploy/docs
     - icon: fontawesome/brands/mastodon
-      link: https://mastodon.social/@letsemploy_org
+      link: https://mstdn.social/@letsemploy_org
 
 extra_css:
   - stylesheets/extra.css

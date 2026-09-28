@@ -1,8 +1,34 @@
-# About Let's Employ
+# Let's Employ Documentation
 
-Create a **free**, **simple**, **convenient** and **standardized** process to publish and find your vacancies on **your own website**. Make it **efficient** for everyone to collect the data with help of a standardised job meta data format [oJobPub](./ojobpub/index.md).
+Technical documentation for **oJobPub**, an open JSON format for publishing job openings, and for the Let's Employ services built around it.
 
-- [x] **Simple**: Employers manage open job positions on their websites.
-- [x] **Efficient**: Search engines collect structured data from a known path on employers' web servers.
-- [x] **Keep Control**: Employers keep control of their data and application process.
-- [x] **Free**: No additional costs beyond what employers already pay for your domain and web hosting.
+An employer publishes a single JSON document at a well-known URL on their own domain:
+
+```
+https://example.com/.well-known/ojobpub.json
+```
+
+The document contains minimal, structured metadata per opening. Each job links to a canonical page on the employer's site, where the full description and the application process stay. Consumers such as job boards, search engines and tools fetch the document directly or use the aggregated data from SourceTracker.
+
+## Data flow
+
+```mermaid
+flowchart LR
+  P["Employer website<br>/.well-known/ojobpub.json"] -- "daily probe" --> S["SourceTracker<br>validate + health check"]
+  S --> E["Daily export<br>.tar.xz"]
+  S --> G["GraphQL API<br>source metadata"]
+  E --> C["Consumers<br>job boards, search, tools"]
+  G --> C
+  C -. "job url" .-> P
+```
+
+## Where to start
+
+| You want to… | Read |
+| --- | --- |
+| Publish your openings as oJobPub | [Publishing](publishing/index.md) |
+| Use oJobPub data in your product | [Consuming](consuming/index.md) |
+| Implement a parser or validator | [Specification](ojobpub/specification.md), [Field reference](ojobpub/schema.md) |
+| Find the services and APIs | [Services](resources/index.md) |
+
+For the motivation behind the project, see [letsemploy.org](https://www.letsemploy.org).

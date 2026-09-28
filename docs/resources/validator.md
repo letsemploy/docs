@@ -1,15 +1,20 @@
 # Validator
 
-| Info    |         |
-| ------- | ------- |
-| Website | [https://validator.letsemploy.org](https://validator.letsemploy.org) |
-| Status | Public Stable |
-| Availablity | Best Effort |
+| | |
+| --- | --- |
+| Website | [validator.letsemploy.org](https://validator.letsemploy.org) |
+| Status | Stable, best effort |
 
-## About
+The Validator checks an oJobPub document against the oJobPub JSON Schema.
 
-Validator is free service by letsemploy.org. It allows to validate oJobPub format using its JSON schema.
+## Offline validation
 
-## Changelog
+Any JSON Schema draft 2020-12 validator works, e.g. in CI:
 
-- 2026-06-01: Public
+```sh
+check-jsonschema \
+  --schemafile https://raw.githubusercontent.com/letsemploy/schema/main/v1/ojobpub.json \
+  public/.well-known/ojobpub.json
+```
+
+The schema validates structure only. Also make sure `lastUpdated` is current and every `url` resolves.

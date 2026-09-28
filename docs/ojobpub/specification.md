@@ -2,10 +2,10 @@
 
 - **Document Version**:  1.0.0-draft.1
 - **Status**:            Draft
-- **Modification Date**: 2026-06-24
+- **Modification Date**: 2026-09-28
 
 
-## Pupose of Document
+## Purpose of This Document
 
 This document defines version 1.0 of the oJobPub JSON standard as documented by LetsEmploy.org.
 
@@ -48,15 +48,21 @@ Also see [IANA Well-Known URIs](https://www.iana.org/assignments/well-known-uris
 
 ### 3.2 Domain and Redirect Behavior
 
-The canonical discovery URL is defined on the domain without the `www` prefix. HTTP redirects are allowed, including redirects to another host or path, provided the final target resolves to a valid oJobPub JSON document.
+The canonical discovery URL is defined on the registrable (apex) domain, e.g. `example.com`, not on `www.example.com` or any other subdomain.
 
-If redirects are used, publishers SHOULD preserve an explicit path to `ojobpub.json` at the target location.
+HTTP redirects are allowed, including redirects to another host or path, provided the final target resolves to a valid oJobPub JSON document. A redirect to any other resource, such as the site's homepage, does not satisfy Section 3.1.
+
+If redirects are used, publishers SHOULD preserve an explicit path to `ojobpub.json` at the target location and SHOULD keep the redirect chain short. Consumers MAY limit the number of redirects they follow. SourceTracker follows at most 5.
 
 ### 3.3 Transport and Content
 
 The feed MUST be served over HTTPS.
 
 The payload MUST be valid JSON. Publishers SHOULD serve it with media type `application/json`.
+
+### 3.4 Static and Generated Feeds
+
+The feed MAY be a static file or generated on request. Consumers cannot tell the two apart, and both are subject to the same rules.
 
 ## 4. Data Model Overview
 
@@ -93,7 +99,7 @@ Additional properties at the top level are not allowed.
 Properties:
 
 - `name` (required): string, length 1..255
-- `location` (required): `location` object
+- `location` (required): `location` object, the employer's headquarters
 - `industry` (optional): string, length 1..255
 - `url` (optional): string, JSON Schema `uri`
 
@@ -112,6 +118,8 @@ Properties:
 - `city` (optional): string
 - `country` (optional): string, exactly 2 characters, ISO 3166-1 alpha-2 (for example `US`, `DE`, `CH`)
 
+The schema does not restrict additional properties in this object.
+
 ## 7. `job` Object Definition
 
 Each entry in `jobs` is a `job` object.
@@ -124,7 +132,7 @@ Additional properties in a `job` object are not allowed.
 - `publishedAt`: string, JSON Schema `date`
 - `title`: string, max length 255
 - `jobType`: string enum
-- `locations`: array of `location` objects
+- `locations`: array of `location` objects, at least 1 item
 - `url`: string, JSON Schema `uri`
 
 ### 7.2 Optional Properties
@@ -134,12 +142,12 @@ Additional properties in a `job` object are not allowed.
 - `applyBefore`: string, JSON Schema `date`
 - `category`: string, max length 255
 - `referenceId`: string, max length 255
-- `description`: string, max length 1000
+- `description`: string, max length 1000, plain text (see Section 7.5)
 - `experienceLevel`: string enum
 - `workLoad`: object
 - `workType`: string enum
 - `salary`: object
-- `tags`: array of strings, each max length 28
+- `tags`: array of unique strings, max 16 items, each max length 28
 
 ### 7.3 Enumerations
 
@@ -199,12 +207,16 @@ Allowed values:
 - `currency`: string, exactly 3 characters, ISO 4217
 - `interval`: enum from Section 7.3.4
 
+### 7.5 Plain-Text Fields
+
+`description` MUST be plain text. It MUST NOT contain HTML markup, script, or `javascript:` URLs. Consumers SHOULD treat all string values as plain text and escape them before rendering.
+
 ## 8. Validation and Conformance
 
 A publisher implementation conforms to this specification if:
 
 - the feed is discoverable at the URL in Section 3.1 (or via HTTP redirect from that URL), and
-- the JSON instance validates against schema version `1.0` with the constraints defined in this document.
+- the JSON instance validates against the JSON Schema (draft 2020-12) for version `1.0` and satisfies the constraints defined in this document.
 
 A consumer SHOULD validate incoming feeds before processing them.
 
@@ -217,7 +229,7 @@ The reference schema and validation tooling are available at:
 
 - Publishers MUST keep `lastUpdated` accurate whenever feed content changes.
 - Publishers SHOULD populate as many optional fields as practical to improve matching and discoverability.
-- Each job entry MUST set `url` to a publicly accessible page that SHOULD includes the complete job description and application details. The `url` MAY reference a domain different from the one hosting `.well-known/ojobpub.json`.
+- Each job entry MUST set `url` to a publicly accessible page that SHOULD include the complete job description and application details. The `url` MAY reference a domain different from the one hosting `.well-known/ojobpub.json`.
 
 ## 10. Security and Privacy Considerations
 

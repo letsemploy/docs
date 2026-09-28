@@ -17,10 +17,3 @@ install: update
 
 run:
 	mkdocs serve -w docs
-
-schema-doc:
-	wget -O ojobpub.json https://raw.githubusercontent.com/letsemploy/schema/refs/heads/main/v1/ojobpub.json
-	rm -f docs/ojobpub/schema.md
-	echo "---\nhide:\n- toc\n---" > docs/ojobpub/schema.md
-	jsonschema-markdown --no-footer --resolve ojobpub.json >> docs/ojobpub/schema.md
-	rm -f ojobpub.json

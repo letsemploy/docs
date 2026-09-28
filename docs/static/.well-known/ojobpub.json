@@ -1,35 +1,32 @@
 {
-    "employer": {
-        "name": "Acme Corp",
-        "location": {
-            "city": "New York",
-            "country": "US"
-        },
-        "industry": "Software",
-        "url": "https://example.com"
-    },
-    "vacancies": [
-        {
-            "datePublished": "2025-08-30",
-            "jobCategory": "Engineering",
-            "jobTitle": "Software Engineer",
-            "jobRef": "SE-2023-001",
-            "applyBefore": "2026-12-31",
-            "language": "en",
-            "jobDescription": "Develop and maintain software applications.",
-            "jobType": "permanent",
-            "workType": "hybrid",
-            "experienceLevel": "mid",
-            "workLoad": {
-                "minPercentage": 80,
-                "maxPercentage": 100
-            },
-            "tags": ["python", "flask", "backend"],
-            "location": {
-                "city": "Amsterdam",
-                "country": "NL"
-            },
-            "jobUrl": "https://example.com/job/1"
-        }
-    ]
+  "version": "1.0",
+  "lastUpdated": "2025-09-13T12:00:00Z",
+  "employer": {
+    "name": "Acme Corp",
+    "location": { "city": "New York", "country": "US" },
+    "industry": "Software",
+    "url": "https://example.com"
+  },
+  "jobs": [
+    {
+      "title": "Software Engineer",
+      "language": "en",
+      "publishedAt": "2025-08-30",
+      "applyBefore": "2026-12-31",
+      "category": "Engineering",
+      "referenceId": "SE-2023-001",
+      "description": "Develop and maintain software applications.",
+      "jobType": "permanent",
+      "workType": "hybrid",
+      "experienceLevel": "mid",
+      "workLoad": { "minPercentage": 80, "maxPercentage": 100 },
+      "tags": ["python", "flask", "backend"],
+      "locations": [
+        { "city": "New York", "country": "US" },
+        { "city": "San Francisco", "country": "US" }
+      ],
+      "salary": { "min": 70000, "max": 120000, "currency": "USD", "interval": "yearly" },
+      "url": "https://example.com/job/1"
+    }
+  ]
 }
