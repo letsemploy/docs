@@ -28,7 +28,11 @@ The older [json-job](http://lukasz-madon.github.io/json-job/) schema has been in
 
 ## How do I get a list of all publishing domains?
 
-Download the [daily export](consuming/index.md#daily-export), or query sources via the [GraphQL API](consuming/index.md#graphql-api).
+Download the [daily export](consuming/index.md#daily-export), or query sources via the [GraphQL API](consuming/index.md#graphql-api). Both are free and need an [API token](consuming/index.md#api-token). To check a single domain, use the public [status API](resources/sourcetracker.md#status-api-and-badge).
+
+## Where can I search the published jobs?
+
+At [jobs.letsemploy.org](https://jobs.letsemploy.org). See [Job Search](resources/jobsearch.md).
 
 ## Where can I propose changes or report issues?
 

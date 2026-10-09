@@ -50,7 +50,12 @@ check-jsonschema \
   ojobpub.json
 ```
 
-Or paste the document into the online [Validator](https://validator.letsemploy.org).
+Or paste the document into the online [Validator](https://validator.letsemploy.org), or send it to its [API](../resources/validator.md#rest-api):
+
+```sh
+curl -s https://validator.letsemploy.org/api/v1/validate \
+  -H 'Content-Type: application/json' --data @ojobpub.json
+```
 
 ## Common mistakes
 

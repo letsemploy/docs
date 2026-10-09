@@ -1,6 +1,342 @@
-[data-md-color-scheme="black"] {
-  --md-primary-fg-color: #0a1318;
+/* Look and feel of letsemploy.org (website/assets/css/main.css): navy from the handshake, orange
+   from the arrow, Schibsted Grotesk and JetBrains Mono, self-hosted. */
+
+@font-face {
+  font-family: "Schibsted Grotesk";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 900;
+  src: url("../static/fonts/schibsted-grotesk-latin-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+@font-face {
+  font-family: "Schibsted Grotesk";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 900;
+  src: url("../static/fonts/schibsted-grotesk-latin-ext-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url("../static/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2-variations");
+}
+
+:root {
+  --md-text-font: "Schibsted Grotesk";
+  --md-code-font: "JetBrains Mono";
+
+  /* Code panels are navy in both schemes, as on the website */
+  --le-code-panel: #0f2a44;
+  --le-code-text: #dbe6f0;
+}
+
+[data-md-color-scheme="default"] {
+  --le-base-100: #ffffff;
+  --le-base-200: #eef3f7;
+  --le-base-300: #d5dee7;
+  --le-content: #0f2a44;
+  --le-primary: #1d4f7a;
+  --le-secondary: #3b6f9c;
+  --le-accent: #ee7418;
+
+  --md-default-bg-color: var(--le-base-100);
+  --md-default-fg-color: rgb(15 42 68 / 0.87);
+  --md-default-fg-color--light: rgb(15 42 68 / 0.62);
+  --md-default-fg-color--lighter: rgb(15 42 68 / 0.32);
+  --md-default-fg-color--lightest: rgb(15 42 68 / 0.1);
+  --md-typeset-color: var(--le-content);
+}
+
+[data-md-color-scheme="slate"] {
+  --le-base-100: #0c1a28;
+  --le-base-200: #112336;
+  --le-base-300: #1d354d;
+  --le-content: #e3eaf1;
+  --le-primary: #8cbbe6;
+  --le-secondary: #5e93c2;
+  --le-accent: #f28a3b;
+
+  --md-hue: 210;
+  --md-default-bg-color: var(--le-base-100);
+  --md-default-bg-color--light: rgb(12 26 40 / 0.54);
+  --md-default-bg-color--lighter: rgb(12 26 40 / 0.26);
+  --md-default-bg-color--lightest: rgb(12 26 40 / 0.07);
+  --md-default-fg-color: rgb(227 234 241 / 0.87);
+  --md-default-fg-color--light: rgb(227 234 241 / 0.62);
+  --md-default-fg-color--lighter: rgb(227 234 241 / 0.32);
+  --md-default-fg-color--lightest: rgb(227 234 241 / 0.12);
+  --md-typeset-color: var(--le-content);
+  --md-shadow-z1: none;
+}
+
+[data-md-color-scheme="default"],
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--le-primary);
+  --md-primary-fg-color--light: var(--le-secondary);
+  --md-primary-fg-color--dark: var(--le-primary);
+  --md-primary-bg-color: var(--le-content);
+  --md-primary-bg-color--light: var(--md-default-fg-color--light);
+  --md-accent-fg-color: var(--le-accent);
+  --md-accent-fg-color--transparent: color-mix(in srgb, var(--le-accent) 10%, transparent);
+  --md-typeset-a-color: var(--le-primary);
+
+  --md-code-bg-color: var(--le-base-200);
+  --md-code-fg-color: var(--le-content);
+
+  --md-footer-bg-color: var(--le-base-200);
+  --md-footer-bg-color--dark: var(--le-base-200);
+  --md-footer-fg-color: var(--le-content);
+  --md-footer-fg-color--light: var(--md-default-fg-color--light);
+  --md-footer-fg-color--lighter: var(--md-default-fg-color--lighter);
+}
+
+/* Layout */
+
 .md-grid {
   max-width: 1440px;
+}
+
+body {
+  font-feature-settings: "ss01", "tnum" 0;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--le-content);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.md-typeset h1 {
+  font-weight: 800;
+}
+
+.md-typeset h2 {
+  font-weight: 700;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+}
+
+:focus-visible {
+  outline: 2px solid var(--le-accent);
+  outline-offset: 3px;
+}
+
+/* Header and tabs: translucent base-100 with a hairline border, like the website */
+
+.md-header,
+.md-tabs {
+  background-color: color-mix(in srgb, var(--le-base-100) 85%, transparent);
+  color: var(--le-content);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--le-base-300) 70%, transparent);
+}
+
+.md-header[data-md-state="shadow"],
+.md-header--shadow {
+  box-shadow: none;
+}
+
+.md-tabs {
+  border-bottom: 1px solid color-mix(in srgb, var(--le-base-300) 70%, transparent);
+}
+
+.md-header__title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.md-header__button.md-logo img,
+.md-nav__button.md-logo img {
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 1px;
+}
+
+.md-tabs__link {
+  font-weight: 500;
+  opacity: 0.75;
+}
+
+.md-tabs__item--active .md-tabs__link,
+.md-tabs__link:hover,
+.md-tabs__link:focus {
+  color: var(--le-content);
+  opacity: 1;
+}
+
+.md-tabs__item--active .md-tabs__link {
+  text-decoration: underline 2px var(--le-accent);
+  text-underline-offset: 0.6em;
+}
+
+/* Search field on a light header */
+
+.md-search__form {
+  background-color: transparent;
+  border-radius: 999px;
+}
+
+.md-search__input {
+  background-color: var(--le-base-200);
+  color: var(--le-content);
+  border-radius: 999px;
+}
+
+.md-search__input:hover {
+  background-color: var(--le-base-300);
+}
+
+.md-search__input::placeholder,
+.md-search__icon {
+  color: var(--md-default-fg-color--light);
+}
+
+[data-md-toggle="search"]:checked ~ .md-header .md-search__input {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Navigation */
+
+.md-nav__link--active,
+.md-nav__item .md-nav__link--active {
+  color: var(--le-primary);
+  font-weight: 600;
+}
+
+.md-nav__link:hover,
+.md-nav__link:focus {
+  color: var(--le-accent);
+}
+
+/* Links: underlined in prose, as on the website */
+
+.md-typeset a {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--le-primary) 40%, transparent);
+  text-underline-offset: 4px;
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+  color: var(--le-primary);
+  text-decoration-color: currentColor;
+}
+
+.md-typeset a.headerlink,
+.md-typeset .md-button {
+  text-decoration: none;
+}
+
+.md-typeset .md-button {
+  border-radius: 999px;
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--le-primary);
+  border-color: var(--le-primary);
+  color: var(--le-base-100);
+}
+
+/* Tables, admonitions and inline code */
+
+.md-typeset table:not([class]) {
+  border: 1px solid var(--le-base-300);
+  border-radius: 0.875rem;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--le-base-200);
+}
+
+.md-typeset table:not([class]) td {
+  border-top-color: var(--le-base-300);
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0.875rem;
+  box-shadow: none;
+}
+
+.md-typeset :not(pre) > code {
+  border-radius: 0.25rem;
+  padding: 0.1em 0.375em;
+}
+
+/* Code panels with the website's token colors */
+
+.md-typeset .highlight {
+  --md-code-bg-color: var(--le-code-panel);
+  --md-code-fg-color: var(--le-code-text);
+  --md-code-hl-color: #8cbbe6;
+  --md-code-hl-color--light: rgb(140 187 230 / 0.12);
+  --md-code-hl-keyword-color: #8cbbe6;
+  --md-code-hl-string-color: #f6c48f;
+  --md-code-hl-number-color: #9fdcb4;
+  --md-code-hl-constant-color: #f28a3b;
+  --md-code-hl-special-color: #f28a3b;
+  --md-code-hl-function-color: #8cbbe6;
+  --md-code-hl-name-color: var(--le-code-text);
+  --md-code-hl-variable-color: #9fdcb4;
+  --md-code-hl-operator-color: #7f97ae;
+  --md-code-hl-punctuation-color: #7f97ae;
+  --md-code-hl-comment-color: #7f97ae;
+  --md-code-hl-generic-color: #7f97ae;
+  --md-default-fg-color--lighter: rgb(219 230 240 / 0.4);
+  --md-default-fg-color--light: rgb(219 230 240 / 0.7);
+  --md-accent-fg-color: #f28a3b;
+}
+
+.md-typeset .highlight .kc {
+  color: #f28a3b;
+}
+
+.md-typeset pre > code {
+  border-radius: 0.5rem;
+}
+
+/* Footer: soft tint instead of black */
+
+.md-footer-meta {
+  background-color: var(--le-base-200);
+  border-top: 1px solid var(--le-base-300);
+}
+
+.md-footer-meta,
+.md-footer-meta__inner a,
+.md-footer-copyright {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-footer-meta .md-social__link:hover,
+.md-footer-meta__inner a:hover {
+  color: var(--le-content);
+}
+
+.md-footer {
+  background-color: var(--le-base-200);
+  color: var(--le-content);
+}
+
+/* Key/value tables written with an empty header row (`| | |`) */
+
+.md-typeset table:not([class]) thead:not(:has(th:not(:empty))) {
+  display: none;
 }

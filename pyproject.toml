@@ -1,0 +1,19 @@
+[project]
+name = "letsemploy-docs"
+version = "0"
+description = "Sources of docs.letsemploy.org"
+requires-python = ">=3.13"
+dependencies = [
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocs-minify-plugin",
+    "mkdocs-redirects",
+]
+
+[dependency-groups]
+dev = [
+    "jsonschema-markdown",
+]
+
+[tool.uv]
+package = false

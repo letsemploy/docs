@@ -11,38 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Setup Python
-        uses: actions/setup-python@v7
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v10.2.0
         with:
-          python-version: "3.13"
-
-      - name: Upgrade pip
-        run: |
-          # install pip=>20.1 to use "pip cache dir"
-          python3 -m pip install --upgrade pip
-
-      - name: Get pip cache dir
-        id: pip-cache
-        run: echo "::set-output name=dir::$(pip cache dir)"
-
-      - name: Cache dependencies
-        uses: actions/cache@v6
-        with:
-          path: ${{ steps.pip-cache.outputs.dir }}
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          enable-cache: true
 
       - name: Install dependencies
-        run: python3 -m pip install -r ./requirements.txt
+        run: uv sync --frozen --no-dev
 
-      - name: install git for git-info
-        uses: awalsh128/cache-apt-pkgs-action@latest
-        with:
-          packages: git
-          version: 1.0
-
-      - run: mkdocs build
+      - name: Build
+        run: uv run --no-sync mkdocs build --strict
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

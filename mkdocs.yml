@@ -22,6 +22,7 @@ nav:
     - SourceTracker: resources/sourcetracker.md
     - Publisher: resources/publisher.md
     - Validator: resources/validator.md
+    - Job Search: resources/jobsearch.md
   - FAQ: faq.md
   - letsemploy.org: //letsemploy.org
 
@@ -41,14 +42,16 @@ theme:
 
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: white
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
 
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode

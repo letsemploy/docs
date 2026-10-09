@@ -1,10 +1,10 @@
 # Let's Employ Documentation
 
-Sources of [docs.letsemploy.org](https://docs.letsemploy.org), built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
+Sources of [docs.letsemploy.org](https://docs.letsemploy.org), built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/). Dependencies are managed with [uv](https://docs.astral.sh/uv/).
 
 ```sh
-python3 -m venv .venv && . .venv/bin/activate
-pip install -r requirements.txt
+make install  # uv sync
 make run      # serve on http://127.0.0.1:8000
-mkdocs build --strict
+make build    # mkdocs build --strict
+make update   # upgrade uv.lock
 ```
