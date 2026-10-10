@@ -4,8 +4,6 @@
 | --- | --- |
 | Website | [validator.letsemploy.org](https://validator.letsemploy.org) |
 | API | [REST](#rest-api), [Swagger UI](https://validator.letsemploy.org/docs) |
-| Source | [github.com/letsemploy/validator](https://github.com/letsemploy/validator) |
-| Container | `ghcr.io/letsemploy/validator` (`amd64`, `arm64`) |
 | Status | Stable, best effort |
 
 The Validator checks an oJobPub document against the [oJobPub JSON Schema](https://github.com/letsemploy/schema) (draft 2020-12), including the `date`, `date-time` and `uri` formats. It checks the schema only. It doesn't check that `lastUpdated` is current, that every `url` resolves, or the [description policy](sourcetracker.md#probes) that SourceTracker applies.
