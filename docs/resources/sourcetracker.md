@@ -5,9 +5,7 @@
 | Website | [sources.letsemploy.org](https://sources.letsemploy.org) |
 | API | [GraphQL](https://sources.letsemploy.org/graphiql?path=/graphql) (token), [status endpoints](#status-api-and-badge) (public) |
 | Export | [/exports/download-latest](https://sources.letsemploy.org/exports/download-latest) (token) |
-| Source | [github.com/letsemploy/sourcetracker](https://github.com/letsemploy/sourcetracker) |
-| Container | `ghcr.io/letsemploy/ojobpub-sourcetracker` |
-| Status | Stable (1.0), best effort |
+| Status | Stable, best effort |
 
 SourceTracker keeps a register of domains that publish oJobPub, validates each feed periodically, and publishes the feeds of healthy domains as a daily export. It is not a job board. It doesn't search, rank or normalize jobs. For a search over the export, see [Job Search](jobsearch.md).
 
