@@ -5,9 +5,7 @@
 | Website | [jobs.letsemploy.org](https://jobs.letsemploy.org) |
 | API | [REST](#api) (public), [OpenAPI UI](https://jobs.letsemploy.org/api/docs) |
 | Feed | [RSS](#rss) |
-| Source | [github.com/letsemploy/minisearch](https://github.com/letsemploy/minisearch) |
-| Container | `ghcr.io/letsemploy/search` (`amd64`, `arm64`) |
-| Status | Preview (0.1), best effort |
+| Status | stable, best effort |
 
 Job Search is a free search over all jobs in the [SourceTracker](sourcetracker.md) export. It shows what consumers can build on oJobPub. It doesn't host job ads or collect applications. Every listing links back to the job `url` on the employer's site.
 
