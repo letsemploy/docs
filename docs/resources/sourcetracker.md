@@ -64,6 +64,8 @@ The export and the GraphQL API require an API token:
 
 Requests over a limit get `429 Too Many Requests` with a `Retry-After` header. Requests without a valid token get `401`.
 
+Tokens are independent of your password: changing it doesn't affect them. If a token may have leaked, revoke it on the account page.
+
 ## Status API and badge
 
 Two public endpoints, without a token, report the status of a single domain. Responses are cached for 5 minutes and allow cross-origin requests.
