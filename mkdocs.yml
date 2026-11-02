@@ -11,6 +11,7 @@ nav:
     - Overview: publishing/index.md
     - Create the Feed: publishing/create.md
     - Serve the Feed: publishing/serve.md
+    - WordPress: publishing/wordpress.md
     - Register: publishing/register.md
   - Consuming: consuming/index.md
   - oJobPub:
