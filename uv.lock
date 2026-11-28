@@ -230,7 +230,7 @@ wheels = [
 
 [[package]]
 name = "jsonschema-markdown"
-version = "2026.8.0"
+version = "2026.11.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -238,9 +238,9 @@ dependencies = [
     { name = "loguru" },
     { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0f/37/63180ecca99a546aff73a0f2b7ccd392e173c94ba061d44a211b3f46e7da/jsonschema_markdown-2026.8.0.tar.gz", hash = "sha256:b286414d739f918fdff4213945a1e1b0d7ffab4f94f4d1d410545b8c9224d06a", size = 14777, upload-time = "2026-08-21T00:07:26.43Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e2/ae/a3f65a8d3ee451c5009776b3ba73192ac2294ab6493b61d261e5b29fb303/jsonschema_markdown-2026.11.0.tar.gz", hash = "sha256:b21b1d0452533d7cbf80b1959c77d9fe6781d161f5c235f49acef08bceb003b3", size = 14989, upload-time = "2026-11-04T23:19:09.764Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a0/b0/8afefa8ccca19b57cf5ebdd46d5766d3e3422feb725758f4392853c6ba04/jsonschema_markdown-2026.8.0-py3-none-any.whl", hash = "sha256:5e2e91634167fc5f4c8550b974661efb96f744abb02f08a9e2aaaa9f33271020", size = 15293, upload-time = "2026-08-21T00:07:25.481Z" },
+    { url = "https://files.pythonhosted.org/packages/87/19/7aa04b41128cf1b53ed56855b10f87075e6251f21b99653be3beaf7607d8/jsonschema_markdown-2026.11.0-py3-none-any.whl", hash = "sha256:45d3b5973abf959cc5e0e3680a18379a0c5f719140667c27cd6ecdd9e79f50e7", size = 15389, upload-time = "2026-11-04T23:19:08.366Z" },
 ]
 
 [[package]]
