@@ -4,10 +4,10 @@ version = "0"
 description = "Sources of docs.letsemploy.org"
 requires-python = ">=3.13"
 dependencies = [
-    "mkdocs",
     "mkdocs-material",
     "mkdocs-minify-plugin",
     "mkdocs-redirects",
+    "properdocs>=1.6.7",
 ]
 
 [dependency-groups]

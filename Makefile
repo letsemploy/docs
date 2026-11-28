@@ -10,10 +10,10 @@ update:
 	uv sync
 
 run:
-	uv run mkdocs serve -w docs
+	uv run properdocs serve -w docs -a localhost:8001
 
 build:
-	uv run mkdocs build --strict
+	uv run properdocs build --strict
 
 docs-publish:
-	uv run mkdocs gh-deploy
+	uv run properdocs gh-deploy

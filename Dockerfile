@@ -5,7 +5,7 @@ WORKDIR /app
 COPY pyproject.toml uv.lock .python-version ./
 RUN uv sync --frozen --no-dev --no-install-project --python-preference only-system
 COPY . .
-RUN uv run --no-sync mkdocs build --strict
+RUN uv run --no-sync properdocs build --strict
 
 FROM registry.gitlab.com/ngine/docker-images/caddy:2
 COPY --from=builder /app/site/ /usr/share/caddy/

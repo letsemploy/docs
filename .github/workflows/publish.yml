@@ -20,7 +20,7 @@ jobs:
         run: uv sync --frozen --no-dev
 
       - name: Build
-        run: uv run --no-sync mkdocs build --strict
+        run: uv run --no-sync properdocs build --strict
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
