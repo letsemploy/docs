@@ -3,7 +3,7 @@
 | | |
 | --- | --- |
 | Website | [sources.letsemploy.org](https://sources.letsemploy.org) |
-| API | [GraphQL](https://sources.letsemploy.org/graphiql?path=/graphql) (token), [status endpoints](#status-api-and-badge) (public) |
+| API | [GraphQL](https://sources.letsemploy.org/graphiql?path=/graphql) (token; GraphiQL needs sign-in), [status endpoints](#status-api-and-badge) (public) |
 | Export | [/exports/download-latest](https://sources.letsemploy.org/exports/download-latest) (token) |
 | Status | Stable, best effort |
 
@@ -11,7 +11,7 @@ SourceTracker keeps a register of domains that publish oJobPub, validates each f
 
 ## Sources
 
-A source is a registrable domain such as `example.com`. SourceTracker rejects subdomains (`www.example.com`, `jobs.example.com`). Anyone can [register a domain](https://sources.letsemploy.org/sources/new). Registration is protected by a captcha and limited to 10 per hour per client. Domain ownership is not verified: a domain only enters the register once its own feed passes every check.
+A source is a registrable domain such as `example.com`. SourceTracker rejects subdomains (`www.example.com`, `jobs.example.com`). Anyone can [register a domain](https://sources.letsemploy.org/sources/new). Registration is protected by a captcha and limited to 10 per hour per client (an IPv6 client counts per `/64`). Domain ownership is not verified: a domain only enters the register once its own feed passes every check.
 
 ## Probes
 
@@ -20,6 +20,7 @@ A probe fetches `https://<domain>/.well-known/ojobpub.json` with:
 - a connect and read timeout of 5 s and an overall deadline of 20 s,
 - a maximum response size of 10 MB,
 - at most 5 redirects (301, 302, 303, 307, 308), each to `http`/`https` on a default port and a public address,
+- `gzip` and `br` (brotli) compression, with the size limit applied to the decoded body,
 - the user agent `oJobPub-SourceTracker/1.0`.
 
 It then runs these checks in order:
@@ -30,7 +31,7 @@ It then runs these checks in order:
 | 2 | `json-downloadable-check` | The response status is 2xx |
 | 3 | `json-valid-check` | The body parses as JSON |
 | 4 | `schema-version-valid-check` | `version` is supported (`1.0`) and the document validates against the schema |
-| 5 | `job-description-policy-check` | No `description` contains HTML tags, `<script`, `javascript:` URLs, inline `on*=` handlers or spam/adult-content terms |
+| 5 | `job-description-policy-check` | No `description` contains HTML tags, `<script`, `javascript:` URLs, inline `on*=` handlers or blocked spam/adult-content terms (matched as whole words) |
 
 A probe succeeds only if every check passes. A check that is skipped because an earlier one failed counts as a failure. The source page lists each check's result and details.
 
@@ -43,11 +44,12 @@ A probe succeeds only if every check passes. A check that is skipped because an 
 | `UNHEALTHY` | The last probe failed | After 1 h |
 | `SUSPENDED` | 10 consecutive probes failed | After 7 days |
 
-- A `PENDING` candidate is hidden from the list, the API and the export. The first probe that passes every check admits it as `HEALTHY`. A candidate that isn't admitted within 24 h of registration is deleted.
-- Only `HEALTHY` sources are included in the export. `UNHEALTHY` and `SUSPENDED` sources stay listed.
+- A `PENDING` candidate is shown in the [source list](https://sources.letsemploy.org/sources) and on its own page with its probes, so you can see which check fails. It is absent from the API, the status endpoints, the badge and the export. The first probe that passes every check admits it as `HEALTHY`. A candidate that isn't admitted within 24 h of registration is deleted.
+- `HEALTHY` sources are included in the export. An `UNHEALTHY` or `SUSPENDED` source stays in it with its last valid document for a grace period of 7 days after its last passing probe, so a short outage doesn't remove its jobs. The status API and the badge always report the actual status.
 - A suspended source is reinstated automatically as soon as a probe passes again. Sources suspended for more than 180 days are removed. You can register them again at any time.
 - Anyone can request an earlier revisit from the source page. The probe is then moved up to within 10 minutes (limited to 30 requests per hour per client).
 - SourceTracker stores a new document only when its SHA-256 hash changes.
+- An administrator can add a public comment to a source, shown on its page.
 
 ## Accounts and API tokens
 
@@ -64,7 +66,7 @@ The export and the GraphQL API require an API token:
 
 Requests over a limit get `429 Too Many Requests` with a `Retry-After` header. Requests without a valid token get `401`.
 
-Tokens are independent of your password: changing it doesn't affect them. If a token may have leaked, revoke it on the account page.
+Tokens are independent of your password: changing it doesn't affect them. If a token may have leaked, revoke it on the account page. Deleting your account on the same page revokes all of its tokens at once.
 
 ## Status API and badge
 
@@ -94,8 +96,8 @@ Unknown and `PENDING` domains return `404`. The badge always returns `200` and r
 
 ## Export
 
-Every day, the feeds of all healthy sources are packed into `letsemploy-ojobpub-<YYYY-MM-DD>.tar.xz`, with one `<domain>.json` per source. Exports are kept for 30 days. Downloads require a token and support `ETag`/`Last-Modified` for conditional requests. See [Consuming](../consuming/index.md#daily-export) for usage.
+Every day at 02:00 UTC, the feeds of all healthy sources (and of failing sources within their [grace period](#lifecycle)) are packed into `letsemploy-ojobpub-<YYYY-MM-DD>.tar.xz`, with one `<domain>.json` per source. Exports are kept for 10 days. Downloads require a token and support `ETag`/`Last-Modified` for conditional requests. See [Consuming](../consuming/index.md#daily-export) for usage.
 
 ## Statistics
 
-The [dashboard](https://sources.letsemploy.org) charts sources, jobs and downloads over 30, 90 or 365 days. The underlying series are public JSON at `/stats/series/sources`, `/stats/series/artifacts` and `/stats/series/downloads`. Via GraphQL, `dailyStats(metric, days)` returns the same daily snapshots.
+The [dashboard](https://sources.letsemploy.org) charts sources by status, the number of published jobs and the downloads per day over 30, 90 or 365 days. The underlying series are public JSON at `/stats/series/sources`, `/stats/series/jobs` and `/stats/series/downloads`. Via GraphQL, `dailyStats(metric, days)` returns the same daily snapshots.

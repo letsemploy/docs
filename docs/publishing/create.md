@@ -37,7 +37,7 @@ The feed doesn't have to be a static file. Any endpoint that returns the documen
 - a route in your CMS or application that renders it from the database,
 - an export from your applicant tracking system, uploaded to object storage.
 
-[Publisher](../resources/publisher.md) does this for you: manage jobs in a web UI and get a feed URL, either on the hosted instance or on your own server.
+[Publisher](../resources/publisher.md) does this for you: manage jobs in a web UI and get a permalink for your domain, either on the hosted instance or on your own server.
 
 ## Validate
 

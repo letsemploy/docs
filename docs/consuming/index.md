@@ -19,11 +19,11 @@ See [SourceTracker](../resources/sourcetracker.md#accounts-and-api-tokens) for t
 
 ## Daily export
 
-Once a day, SourceTracker builds an XZ-compressed tar archive with the feeds of all healthy sources:
+Once a day at 02:00 UTC, SourceTracker builds an XZ-compressed tar archive with the feeds of all healthy sources. A source that started failing stays in it with its last valid document for 7 days; the entry's modification time tells you how old that document is.
 
 - Name: `letsemploy-ojobpub-<YYYY-MM-DD>.tar.xz`
 - Content: one `<domain>.json` per source, sorted by domain, each a complete oJobPub document
-- Retention: 30 days
+- Retention: 10 days
 
 ```sh
 curl -sSLOJ -H "Authorization: Bearer $ST_TOKEN" \

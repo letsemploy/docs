@@ -8,10 +8,10 @@ Submit the **apex domain** (e.g. `example.com`, not `www.example.com`) at [sourc
 
 ## What happens next
 
-1. Your domain is accepted as a `PENDING` candidate, and SourceTracker probes it right away. Candidates aren't listed publicly yet.
+1. Your domain is accepted as a `PENDING` candidate, and SourceTracker probes it right away. You land on the candidate's page, which shows each check's result, so you can fix a failing check in time. Candidates aren't in the API, the badge or the export yet.
 2. The first probe that passes every check admits the domain to the register as `HEALTHY`. A failing candidate is retried every hour and deleted if it isn't admitted within **24 h**. Fix the feed and register it again.
 3. Once registered, healthy sources are probed every **24 h**, unhealthy ones every **1 h**. The source page shows each check's result and details. You can request an earlier revisit there after you fix an issue.
-4. Feeds of healthy sources are included in the next [daily export](../consuming/index.md#daily-export).
+4. Feeds of healthy sources are included in the next [daily export](../consuming/index.md#daily-export). If your feed fails later, its last valid version stays in the export for 7 days.
 
 After 10 failed probes in a row, a source is `SUSPENDED`: it stays listed, is probed weekly and is reinstated automatically once a probe passes. Sources suspended for more than 180 days are removed. See the [lifecycle](../resources/sourcetracker.md#lifecycle) for details.
 
