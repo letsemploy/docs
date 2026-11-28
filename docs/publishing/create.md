@@ -39,6 +39,9 @@ The feed doesn't have to be a static file. Any endpoint that returns the documen
 
 [Publisher](../resources/publisher.md) does this for you: manage jobs in a web UI and get a permalink for your domain, either on the hosted instance or on your own server.
 
+!!! warning "Creating jobs in Publisher is not enough"
+    Consumers look for your jobs only at `https://<your-domain>/.well-known/ojobpub.json`, never at Publisher. Until that path [redirects or proxies](serve.md#redirect) to your Publisher permalink, nobody finds your jobs. Set this up on your own web server, then use **Check setup** under **Domains** in Publisher to confirm it. See [Connect a feed to your domain](../resources/publisher.md#connect-a-feed-to-your-domain).
+
 ## Validate
 
 Validate against the [JSON Schema](https://github.com/letsemploy/schema) before publishing. You can do it locally:
